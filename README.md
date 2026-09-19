@@ -55,3 +55,5 @@ python3 -m http.server 8000
 Any static host works. For Netlify/Vercel, point the project at this
 directory with no build command and no output directory override — deploy
 the files as-is.
+
+<!-- redeploy trigger -->
