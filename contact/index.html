@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Encore</title>
-  <meta name="description" content="Tell us the city, the date, and who you're trying to impress. Encore will follow up directly to plan your turnkey game night." />
+  <title>Run an Encore Pilot — Encore</title>
+  <meta name="description" content="Tell Encore your venue, your market, or the conference you're planning around. We'll follow up directly." />
   <link rel="canonical" href="https://book-encore.com/contact/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Encore" />
-  <meta property="og:title" content="Contact — Encore" />
-  <meta property="og:description" content="Tell us about the night. We'll follow up directly." />
+  <meta property="og:title" content="Run an Encore Pilot — Encore" />
+  <meta property="og:description" content="Tell Encore your venue, your market, or the conference you're planning around. We'll follow up directly." />
   <meta property="og:url" content="https://book-encore.com/contact/" />
   <meta property="og:image" content="https://book-encore.com/assets/img/og-default.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -18,34 +18,36 @@
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/platform.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="/" class="wordmark">EN<span>C</span>ORE</a>
-
+      <a href="/" class="wordmark"><img src="/assets/brand/encore-logo-white.png" alt="Encore" /></a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="/experiences/">Experiences</a>
-        <a href="/venues/">Venues</a>
-        <a href="/contact/" aria-current="page">Contact</a>
+        <a href="/for-teams/">For Teams</a>
+        <a href="/for-corporate-events/">For Corporate Events</a>
+        <a href="/how-it-works/">How It Works</a>
+        <a href="/case-studies/">Case Studies</a>
+        <a href="/about/">About</a>
       </nav>
-
       <div class="nav-actions">
-        <a href="/contact/" class="btn btn-primary nav-cta">Plan your event</a>
+        <a href="/contact/" class="btn btn-outline-gold nav-cta" aria-current="page">Run an Encore Pilot</a>
         <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
     <nav id="mobile-menu" class="mobile-menu container" data-mobile-menu aria-label="Mobile">
-      <a href="/experiences/">Experiences</a>
-      <a href="/venues/">Venues</a>
-      <a href="/contact/" aria-current="page">Contact</a>
-      <a href="/contact/" class="btn btn-primary btn-block">Plan your event</a>
+      <a href="/for-teams/">For Teams</a>
+      <a href="/for-corporate-events/">For Corporate Events</a>
+      <a href="/how-it-works/">How It Works</a>
+      <a href="/case-studies/">Case Studies</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="btn btn-primary btn-block" aria-current="page">Run an Encore Pilot</a>
     </nav>
   </header>
 
@@ -53,15 +55,15 @@
 
     <section class="page-header">
       <div class="container container--narrow">
-        <p class="eyebrow">Get In Touch</p>
-        <h1 class="display-1" style="max-width: 16ch;">Tell us about the night.</h1>
+        <p class="eyebrow">Run An Encore Pilot</p>
+        <h1 class="display-1" style="max-width: 18ch;">Give us one venue. One conference. One market.</h1>
         <p class="lede">A few details and we'll follow up directly — no forms that disappear into a queue.</p>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container container--narrow">
-        <form class="form-panel" data-contact-form novalidate>
+        <form class="form-panel" data-contact-form novalidate style="background: var(--bg-panel); border: 1px solid var(--line);">
 
           <div class="form-grid form-grid--two">
             <div class="field">
@@ -87,12 +89,12 @@
 
           <div class="form-grid form-grid--two" style="margin-top: 1.4rem;">
             <div class="field">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" placeholder="Where's the event?" required />
+              <label for="city">Market / city</label>
+              <input type="text" id="city" name="city" placeholder="Where's the opportunity?" required />
             </div>
             <div class="field">
               <label for="dates">Dates</label>
-              <input type="text" id="dates" name="dates" placeholder="Date or window" required />
+              <input type="text" id="dates" name="dates" placeholder="Conference or event window" required />
             </div>
           </div>
 
@@ -102,22 +104,22 @@
               <input type="number" id="guestCount" name="guestCount" min="1" inputmode="numeric" required />
             </div>
             <div class="field">
-              <label for="inquiryType">I'm reaching out about</label>
+              <label for="inquiryType">I'm reaching out as</label>
               <select id="inquiryType" name="inquiryType">
-                <option value="Plan an event" selected>Planning an event</option>
-                <option value="Venue or team partnership">Venue or team partnership</option>
+                <option value="Corporate / field marketing" selected>Corporate / field marketing</option>
+                <option value="Sports organization / venue">Sports organization / venue</option>
               </select>
             </div>
           </div>
 
           <div class="field" style="margin-top: 1.4rem;">
-            <label for="impress">Who are you trying to impress?</label>
-            <textarea id="impress" name="impress" placeholder="Top prospects, an executive team, a partner group…" required></textarea>
+            <label for="impress">What are you trying to accomplish?</label>
+            <textarea id="impress" name="impress" placeholder="Top prospects, an executive team, inventory you need filled…" required></textarea>
           </div>
 
           <div class="form-footer">
             <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-            <button type="submit" class="btn btn-primary" data-submit-btn>Request your night</button>
+            <button type="submit" class="btn btn-primary" data-submit-btn>Request your pilot</button>
           </div>
         </form>
 
@@ -131,23 +133,30 @@
     <div class="container">
       <div class="footer-top">
         <div>
-          <a href="/" class="wordmark">EN<span>C</span>ORE</a>
-          <p class="footer-blurb">Turnkey corporate game nights, planned and run behind the scenes.</p>
+          <a href="/" class="wordmark"><img src="/assets/brand/encore-logo-white.png" alt="Encore" /></a>
+          <p class="footer-blurb">The revenue engine for sports hospitality.</p>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
-            <h4>Site</h4>
+            <h4>Product</h4>
             <ul>
-              <li><a href="/experiences/">Experiences</a></li>
-              <li><a href="/venues/">Venues</a></li>
-              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/for-teams/">For Teams</a></li>
+              <li><a href="/for-corporate-events/">For Corporate Events</a></li>
+              <li><a href="/how-it-works/">How It Works</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/case-studies/">Case Studies</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Run an Encore Pilot</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Get in touch</h4>
             <ul>
               <li><a href="mailto:gabe@book-encore.com">gabe@book-encore.com</a></li>
-              <li><a href="/contact/">Plan your event</a></li>
             </ul>
           </div>
         </div>
