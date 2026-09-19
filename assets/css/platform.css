@@ -356,6 +356,56 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .stub-notice strong { color: var(--green-bright); }
 
+/* ---- Capability grid ---- */
+
+.cap-grid { margin-top: 2rem; display: grid; gap: 1rem; }
+@media (min-width: 700px) { .cap-grid { grid-template-columns: repeat(2, 1fr); } }
+.cap-card { background: var(--bg-panel); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1.5rem; }
+.cap-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.6rem; }
+.cap-card p { color: var(--ink-muted); font-size: 0.92rem; }
+
+/* ---- Prompt box (corporate events, self-serve request) ---- */
+
+.prompt-box {
+  margin-top: 2rem; background: var(--bg-panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: clamp(1.5rem, 3vw, 2rem); max-width: 40rem;
+}
+.prompt-label { font-size: 0.85rem; font-weight: 600; color: var(--ink-muted); margin-bottom: 0.75rem; }
+.prompt-input {
+  background: var(--bg-elevated); border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: 1rem 1.1rem; font-size: 0.95rem; color: var(--ink); line-height: 1.5; margin-bottom: 1.1rem;
+}
+.prompt-box .btn { width: auto; }
+
+.option-grid { margin-top: 2rem; display: grid; gap: 1rem; }
+@media (min-width: 800px) { .option-grid { grid-template-columns: repeat(3, 1fr); } }
+.option-card { background: var(--bg-panel); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.9rem; }
+.option-card h3 { font-size: 1.05rem; font-weight: 700; }
+.option-meta { display: flex; flex-direction: column; gap: 0.4rem; }
+.option-meta li { font-size: 0.88rem; color: var(--ink-muted); }
+.option-card p { font-size: 0.88rem; color: var(--ink-muted); }
+
+/* ---- Event brief artifact ---- */
+
+.brief-card {
+  margin-top: 2.5rem; background: var(--warm-white); color: var(--ink-on-light);
+  border: 1px solid var(--line-on-light); border-radius: var(--radius);
+  padding: clamp(1.75rem, 4vw, 2.75rem); max-width: 42rem;
+}
+.brief-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--green-dim); margin-bottom: 0.75rem; }
+.brief-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.35rem; }
+.brief-date { color: var(--ink-on-light-dim); font-size: 0.92rem; margin-bottom: 1.75rem; }
+.brief-section { padding-block: 1.25rem; border-top: 1px solid var(--line-on-light); }
+.brief-section:first-of-type { border-top: 0; }
+.brief-section h4 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-on-light-dim); margin-bottom: 0.6rem; }
+.brief-section p { color: var(--ink-on-light-muted); font-size: 0.95rem; }
+.brief-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.brief-tags li { font-size: 0.82rem; font-weight: 600; color: var(--ink-on-light-muted); background: var(--cream-panel); border-radius: 999px; padding: 0.3em 0.85em; }
+.brief-handles { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.5rem; }
+.brief-handles li { font-size: 0.92rem; color: var(--ink-on-light-muted); padding-left: 1.1rem; position: relative; }
+.brief-handles li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 6px; height: 6px; border-radius: 50%; background: var(--green-dim); }
+.brief-cta { margin-top: 1.75rem; }
+
 /* ---- Utility ---- */
 
 .text-center { text-align: center; }
