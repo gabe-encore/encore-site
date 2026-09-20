@@ -55,7 +55,7 @@
 
   <main id="main">
 
-    <!-- Hero -->
+    <!-- Hero: the promise, and the machine -->
     <section class="hero section--dark">
       <picture class="hero-bg">
         <source media="(max-width: 700px)" srcset="/assets/brand/event-concept-charlotte-960.jpg" />
@@ -63,287 +63,173 @@
       </picture>
       <div class="hero-bg-overlay"></div>
       <span class="photo-caption">Concept rendering</span>
-      <div class="container">
+      <div class="container hero-row">
         <div class="hero-inner">
           <p class="eyebrow hero-eyebrow">The Revenue Engine for Sports Hospitality</p>
           <h1 class="display-1 hero-headline">Turn the conferences coming to your city into revenue.</h1>
-          <p class="lede hero-lede">
-            Encore identifies the companies entering your market, matches them to your premium
-            inventory, and helps turn the opportunity into a booked corporate event.
-          </p>
+          <p class="lede hero-lede">See every company coming to town. Let Encore's agents turn them into booked suites.</p>
           <div class="hero-actions">
-            <a href="/for-teams/" class="btn btn-primary">For Teams</a>
-            <a href="/for-corporate-events/" class="btn btn-ghost">For Corporate Events</a>
+            <a href="/contact/" class="btn btn-primary">Run an Encore Pilot</a>
+            <a href="#how" class="btn btn-ghost">See how it works</a>
           </div>
-          <p class="hero-note">Used by premium sales teams to uncover demand they wouldn't otherwise see.</p>
         </div>
 
-        <!-- Product demo -->
-        <div class="demo">
-          <div class="demo-card">
-            <p class="demo-kicker">Conference detected · Detroit · Nov 12–14</p>
-            <h3 class="demo-title">Automotive Innovation Summit</h3>
-            <div class="demo-stats">
-              <div class="demo-stat"><span>Attendees</span><strong>2,840</strong></div>
-              <div class="demo-stat"><span>Target companies</span><strong>187</strong></div>
-              <div class="demo-stat"><span>High-fit accounts</span><strong>42</strong></div>
-            </div>
+        <!-- Demand feed -->
+        <div class="feed-card">
+          <div class="feed-head">
+            <span class="feed-title">Coming to Detroit</span>
+            <span class="feed-sub">Next 90 days</span>
           </div>
-          <div class="demo-card">
-            <p class="demo-kicker">Matched inventory · Pistons · Nov 13</p>
-            <div class="score-gauge">
-              <div class="score-ring"><span>94</span></div>
-              <div>
-                <p class="score-value-label">Opportunity score</p>
-                <p class="score-label">Fit across inventory, buyers &amp; budget</p>
-              </div>
-            </div>
-            <div class="demo-stats">
-              <div class="demo-stat"><span>Suites open</span><strong>2</strong></div>
-              <div class="demo-stat"><span>Seats / suite</span><strong>24</strong></div>
-              <div class="demo-stat"><span>Indicative</span><strong>$18K–$24K</strong></div>
-            </div>
-            <div class="demo-tags">
-              <span class="demo-tag">Ford</span>
-              <span class="demo-tag">Bosch</span>
-              <span class="demo-tag">Continental</span>
-              <span class="demo-tag">Magna</span>
-            </div>
-            <a href="/for-teams/" class="btn btn-primary btn-block">Create Opportunity</a>
+          <div class="feed-stats">
+            <div><strong>14</strong><span>Conferences</span></div>
+            <div><strong>412</strong><span>Companies</span></div>
+            <div><strong style="color: var(--gold);">6</strong><span>Agents working</span></div>
+          </div>
+          <div class="feed-row feed-row--hot">
+            <div><p class="feed-row-title">Automotive Innovation Summit</p><p class="feed-row-sub">Nov 12–14 · 2,840 attendees</p></div>
+            <span class="feed-badge feed-badge--solid">Proposal sent</span>
+          </div>
+          <div class="feed-row">
+            <div><p class="feed-row-title">Materials Week</p><p class="feed-row-sub">Dec 2–4 · 1,900 attendees</p></div>
+            <span class="feed-badge feed-badge--outline">4 buyers found</span>
+          </div>
+          <div class="feed-row">
+            <div><p class="feed-row-title">EV Supply Chain Forum</p><p class="feed-row-sub">Jan 20–22 · 3,100 attendees</p></div>
+            <span class="feed-badge feed-badge--muted">Outreach live</span>
+          </div>
+          <div class="feed-row">
+            <div><p class="feed-row-title">+ 11 more</p><p class="feed-row-sub">Scored and queued</p></div>
+            <span class="feed-badge feed-badge--faint">Illustrative</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Insight -->
+    <!-- The blind spot -->
     <section id="how" class="section section--light">
-      <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2.5rem;">
-        <div>
-          <h2 class="display-2" style="max-width: 26ch; margin-inline: auto;">The demand is already there. You just aren't seeing it.</h2>
-          <p class="lede lede--on-light" style="margin-inline: auto; margin-top: 1rem; text-align: center;">Conferences bring budgets and decision-makers into your city every week. Your suites sit a few miles away. Nobody connects the two.</p>
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 3rem; flex-wrap: wrap;">
+          <h2 class="display-2" style="max-width: 24ch;">Your city is full of buyers. Your pipeline isn't.</h2>
+          <p class="lede lede--on-light" style="max-width: 24ch;">The same week. Two very different pictures.</p>
         </div>
-        <div class="overlap" style="width: 100%;">
-          <div class="overlap-col">
-            <p class="overlap-col-title">Conferences</p>
-            <ul class="overlap-list">
-              <li>Companies</li>
-              <li>Executives</li>
-              <li>Prospects</li>
-              <li>Marketing budgets</li>
-            </ul>
+
+        <div class="blindspot-grid">
+          <div class="blindspot-panel blindspot-panel--light">
+            <div class="blindspot-head"><span>What your team sees</span><span>Week of Nov 10</span></div>
+            <div class="blindspot-rows">
+              <div class="blindspot-row"><span>Season-ticket renewal</span><span>Existing</span></div>
+              <div class="blindspot-row"><span>Inbound suite inquiry</span><span>Existing</span></div>
+              <div class="blindspot-empty">Nothing else in view</div>
+            </div>
+            <div class="blindspot-total"><span class="blindspot-total-num">2</span><span class="blindspot-total-label">opportunities</span></div>
           </div>
-          <div class="overlap-center">
-            <span class="wordmark"><img src="/assets/brand/encore-logo-black.png" alt="Encore" /></span>
-            <p>Matches demand to inventory and turns the overlap into revenue.</p>
-          </div>
-          <div class="overlap-col">
-            <p class="overlap-col-title">Sports</p>
-            <ul class="overlap-list">
-              <li>Open suites</li>
-              <li>Premium clubs</li>
-              <li>Hospitality inventory</li>
-              <li>Game dates</li>
-            </ul>
+
+          <div class="blindspot-panel blindspot-panel--dark">
+            <div class="blindspot-head"><strong>What Encore sees</strong><span>Week of Nov 10</span></div>
+            <div class="blindspot-rows">
+              <div class="blindspot-row"><span>Automotive Innovation Summit</span><span>187 companies</span></div>
+              <div class="blindspot-row"><span>Healthcare CIO Forum</span><span>64 companies</span></div>
+              <div class="blindspot-row"><span>Manufacturing Leaders Offsite</span><span>22 companies</span></div>
+              <div class="blindspot-row"><span>Regional sales kickoffs</span><span>9 companies</span></div>
+              <div class="blindspot-row"><span>Your existing pipeline</span><span>2</span></div>
+            </div>
+            <div class="blindspot-total"><span class="blindspot-total-num">44</span><span class="blindspot-total-label">high-fit opportunities</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Two sides -->
+    <!-- Matched to your dates -->
     <section class="section section--dark">
       <div class="container">
-        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
-          <h2 class="display-2" style="max-width: 20ch;">One platform. Two sides of the transaction.</h2>
-          <p class="lede">The team gets revenue it wasn't going to find. The buyer gets an event it couldn't have organized alone.</p>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 3rem; flex-wrap: wrap;">
+          <h2 class="display-2" style="max-width: 24ch;">Every open date, matched to who's in town.</h2>
+          <p class="lede" style="max-width: 24ch;">Your idle inventory, finally next to the demand that could fill it.</p>
         </div>
 
-        <div class="split-two" style="background: var(--line); border-color: var(--line);">
-          <div class="split-panel" style="background: var(--bg); border-top: 2px solid var(--gold);">
-            <p class="eyebrow">For Sports Organizations</p>
-            <h3>Fill the inventory your sales team doesn't have time to chase.</h3>
-            <div class="workflow-chain">
-              <p class="workflow-step" style="color: var(--ink-muted); border-color: var(--line);"><strong style="color: var(--ink);">1. Discover.</strong> Encore monitors conferences, events and corporate activity coming into your market.</p>
-              <p class="workflow-step" style="color: var(--ink-muted); border-color: var(--line);"><strong style="color: var(--ink);">2. Prioritize.</strong> Identifies the companies and buyers most likely to purchase hospitality.</p>
-              <p class="workflow-step" style="color: var(--ink-muted); border-color: var(--line);"><strong style="color: var(--ink);">3. Activate.</strong> Creates the opportunity and starts the buyer journey.</p>
-              <p class="workflow-step" style="color: var(--ink-muted); border-color: var(--line);"><strong style="color: var(--ink);">4. Close.</strong> Your team closes on your contract, your pricing and your terms.</p>
-              <p class="workflow-step" style="color: var(--ink-muted); border-color: var(--line);"><strong style="color: var(--ink);">5. Learn.</strong> Every outcome sharpens what Encore knows about what converts.</p>
-            </div>
-            <a href="/for-teams/" class="btn btn-ghost" style="align-self: flex-start;">See how Encore works for teams →</a>
+        <div class="table-scroll">
+        <div class="match-grid-wrap">
+          <div class="match-row">
+            <span class="match-row-label">Home dates</span>
+            <span class="match-cell match-cell--head">Wed Nov 5</span>
+            <span class="match-cell match-cell--head match-cell--hit">Thu Nov 13</span>
+            <span class="match-cell match-cell--head">Wed Nov 26</span>
+            <span class="match-cell match-cell--head">Wed Dec 3</span>
+            <span class="match-cell match-cell--head">Wed Dec 17</span>
+            <span class="match-cell match-cell--head">Wed Jan 7</span>
+            <span class="match-cell match-cell--head">Wed Jan 21</span>
           </div>
-
-          <div class="split-panel" style="background: var(--bg); border-top: 2px solid var(--ink);">
-            <p class="eyebrow" style="color: var(--ink-muted);">For Corporate Events</p>
-            <h3>Turn "we're all going to Detroit" into something worth talking about.</h3>
-            <div class="demo-card" style="border-color: var(--line);">
-              <div class="demo-stats" style="border-bottom: 1px solid var(--line); padding-bottom: 1rem;">
-                <div class="demo-stat"><span>Conference</span><strong>Automotive Summit</strong></div>
-                <div class="demo-stat"><span>Audience</span><strong>24 priority prospects</strong></div>
-              </div>
-              <p class="label" style="margin-top: 0.5rem;">Encore recommends</p>
-              <div class="demo-tags">
-                <span class="demo-tag">Pistons suite</span>
-                <span class="demo-tag">Private hospitality</span>
-                <span class="demo-tag">Legend appearance</span>
-                <span class="demo-tag">Food &amp; beverage</span>
-                <span class="demo-tag">20–24 guests</span>
-              </div>
-              <p class="label" style="margin-top: 0.5rem; color: var(--ink);">Invite → RSVP → Book → Manage → Measure</p>
-            </div>
-            <a href="/for-corporate-events/" class="btn btn-ghost" style="align-self: flex-start;">Plan an event with Encore →</a>
+          <div class="match-row">
+            <span class="match-row-label">Open suites</span>
+            <span class="match-cell">4</span>
+            <span class="match-cell match-cell--hit">2</span>
+            <span class="match-cell">6</span>
+            <span class="match-cell">3</span>
+            <span class="match-cell">5</span>
+            <span class="match-cell">7</span>
+            <span class="match-cell">2</span>
+          </div>
+          <div class="match-row">
+            <span class="match-row-label">In town</span>
+            <span class="match-cell match-cell--dim">None</span>
+            <span class="match-cell match-cell--label match-cell--hit">Automotive Innovation Summit</span>
+            <span class="match-cell match-cell--dim">None</span>
+            <span class="match-cell match-cell--label">Materials Week</span>
+            <span class="match-cell match-cell--dim">None</span>
+            <span class="match-cell match-cell--dim">None</span>
+            <span class="match-cell match-cell--label">EV Supply Chain Forum</span>
+          </div>
+          <div class="match-row">
+            <span class="match-row-label">Encore</span>
+            <span class="match-cell"></span>
+            <span class="match-cell match-cell--hit">Fit 94 · $22K</span>
+            <span class="match-cell"></span>
+            <span class="match-cell" style="color: var(--gold);">Fit 89 · $14K</span>
+            <span class="match-cell"></span>
+            <span class="match-cell"></span>
+            <span class="match-cell" style="color: var(--gold);">Fit 86 · $31K</span>
           </div>
         </div>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--ink-dim); margin-top: 1rem;">Illustrative data.</p>
       </div>
     </section>
 
-    <!-- Coordination -->
+    <!-- Agents act -->
     <section class="section section--light">
-      <div class="container">
-        <div style="max-width: 44rem;">
-          <h2 class="display-2">The problem isn't inventory. It's coordination.</h2>
-          <p class="lede lede--on-light" style="margin-top: 1rem;">A single suite night touches six teams inside and outside the venue. By the time everyone signs off, the conference has left town.</p>
+      <div class="container" style="display: flex; flex-direction: column; gap: 2.5rem;">
+        <div style="max-width: 30rem;">
+          <h2 class="display-2" style="color: var(--ink-on-light);">Then agents go to work.</h2>
+          <p class="body-text body-text--on-light" style="margin-top: 1rem;">They find the buyer, build the package, clear approvals and hand your team a deal to close.</p>
         </div>
 
-        <div class="coord-grid">
-          <div class="coord-panel coord-panel--before">
-            <p class="coord-label">Today</p>
-            <div class="coord-chips">
-              <span class="coord-chip">Buyer</span><span class="coord-arrow">→</span>
-              <span class="coord-chip">Events team</span><span class="coord-arrow">→</span>
-              <span class="coord-chip">Premium sales</span><span class="coord-arrow">→</span>
-              <span class="coord-chip">Venue ops</span><span class="coord-arrow">→</span>
-              <span class="coord-chip">Catering</span><span class="coord-arrow">→</span>
-              <span class="coord-chip">Experiences</span><span class="coord-arrow">→</span>
-              <span class="coord-chip">Contracting</span>
-            </div>
-            <div class="coord-result">
-              <span class="coord-result-big">3 weeks</span>
-              <span class="coord-result-label">of email before a proposal exists</span>
-            </div>
+        <div class="agent-panel">
+          <div class="agent-panel-head"><strong>Thu Nov 13 · Suite 204</strong><span>Automotive Innovation Summit</span></div>
+          <div class="agent-panel-row"><span class="agent-panel-label">Buyer</span><span class="agent-panel-text">VP Marketing at Ford identified. Intro sent.</span></div>
+          <div class="agent-panel-row"><span class="agent-panel-label">Inventory</span><span class="agent-panel-text">Suite 204 held, 6:30–10 PM.</span></div>
+          <div class="agent-panel-row"><span class="agent-panel-label">Catering</span><span class="agent-panel-text">Package A fits 24 guests, within budget.</span></div>
+          <div class="agent-panel-row" style="border-bottom: 0;"><span class="agent-panel-label">Approvals</span><span class="agent-panel-text">Venue ops signed off in Slack.</span></div>
+          <div class="agent-panel-close">
+            <span class="agent-panel-close-label">Ready for your team to close</span>
+            <span class="agent-panel-close-amount">$22,000</span>
           </div>
-
-          <div class="coord-panel coord-panel--after">
-            <p class="coord-label">With Encore</p>
-            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
-              <span class="coord-chip">Buyer</span>
-              <span style="color: var(--gold);">→</span>
-              <span style="border: 1px solid var(--gold); border-radius: 6px; padding: 0.8rem 1rem; display: inline-flex; align-items: center;"><img src="/assets/brand/encore-logo-white.png" alt="Encore" style="height: 16px;" /></span>
-              <span style="color: var(--gold);">→</span>
-            </div>
-            <div class="coord-checks">
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Availability</span>
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Pricing</span>
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Food &amp; beverage</span>
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Experiences</span>
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Approvals</span>
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Proposal</span>
-              <span class="coord-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#c9a04c" stroke-width="1.8" aria-hidden="true"><path d="M2 7.5l3 3 7-7"/></svg>Contract</span>
-            </div>
-            <div class="coord-result">
-              <span class="coord-result-big">Booked</span>
-              <span class="coord-result-label">one thread, one proposal, one contract</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Agents -->
-    <section class="section section--dark">
-      <div class="container" style="display: grid; gap: 2rem;">
-        <div style="max-width: 34rem;">
-          <h2 class="display-2">Encore handles the coordination humans shouldn't have to.</h2>
-          <p class="lede" style="margin-top: 1rem;">Specialized agents work each part of the event in parallel and report back in plain language. Your team approves; Encore does the chasing.</p>
-        </div>
-        <div class="radar-panel" style="margin-top: 0;">
-          <div class="radar-head">
-            <span class="radar-title">Detroit Automotive Leaders Night</span>
-            <span class="radar-range">Nov 13 · 6:30 PM</span>
-          </div>
-          <div>
-            <div style="display: grid; grid-template-columns: 150px 1fr 70px; gap: 1rem; align-items: start; padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--line);">
-              <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 700;"><span class="agent-dot"></span>Inventory</span>
-              <span style="font-size: 0.95rem; color: var(--ink-muted);">"Suite 204 confirmed available Nov 13, 6:30–10 PM."</span>
-              <span style="font-size: 0.78rem; color: var(--ink-dim); text-align: right;">9:02 AM</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 150px 1fr 70px; gap: 1rem; align-items: start; padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--line);">
-              <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 700;"><span class="agent-dot"></span>Food &amp; beverage</span>
-              <span style="font-size: 0.95rem; color: var(--ink-muted);">"Package A fits 24 guests and stays within the $20K budget."</span>
-              <span style="font-size: 0.78rem; color: var(--ink-dim); text-align: right;">9:04 AM</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 150px 1fr 70px; gap: 1rem; align-items: start; padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--line);">
-              <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 700;"><span class="agent-dot"></span>Experience</span>
-              <span style="font-size: 0.95rem; color: var(--ink-muted);">"Pistons legend appearance available. Request sent."</span>
-              <span style="font-size: 0.78rem; color: var(--ink-dim); text-align: right;">9:11 AM</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 150px 1fr 70px; gap: 1rem; align-items: start; padding: 1.1rem 1.5rem; border-bottom: 1px solid var(--line);">
-              <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 700;"><span class="agent-dot"></span>Approval</span>
-              <span style="font-size: 0.95rem; color: var(--ink-muted);">"Venue ops approval received in Slack."</span>
-              <span style="font-size: 0.78rem; color: var(--ink-dim); text-align: right;">10:36 AM</span>
-            </div>
-            <div style="display: grid; grid-template-columns: 150px 1fr 70px; gap: 1rem; align-items: start; padding: 1.1rem 1.5rem;">
-              <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 700;"><span class="agent-dot"></span>Buyer</span>
-              <span style="font-size: 0.95rem; color: var(--ink-muted);">"23 target attendees identified. Outreach sequence ready."</span>
-              <span style="font-size: 0.78rem; color: var(--ink-dim); text-align: right;">10:40 AM</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Corporate experience teaser -->
-    <section class="section section--light section--tight">
-      <div class="container">
-        <p class="eyebrow eyebrow--on-light">For Field Marketing</p>
-        <h2 class="display-2" style="margin-top: 1rem; max-width: 20ch;">Tell Encore what you're trying to accomplish.</h2>
-        <div class="prompt-box" style="background: var(--warm-white); border-color: var(--line-on-light); max-width: none; margin-top: 1.5rem;">
-          <p class="prompt-label" style="color: var(--ink-on-light-dim);">Your goal</p>
-          <p class="prompt-input" style="background: var(--cream-panel); color: var(--ink-on-light); border-color: var(--line-on-light);">"I'm bringing 18 automotive prospects to Detroit during the Nov 12–14 summit. I'd like to spend up to $20K and want something more memorable than dinner."</p>
-          <button class="btn" style="background: var(--ink-on-light); color: var(--warm-white);" type="button">Find an opportunity</button>
-        </div>
-        <div class="option-grid">
-          <div class="option-card" style="background: var(--warm-white); border-color: var(--ink-on-light);">
-            <span class="label" style="color: var(--ink-on-light-dim);">Recommended</span>
-            <h3 style="color: var(--ink-on-light);">Pistons suite</h3>
-            <p style="color: var(--ink-on-light-muted);">18 guests · $17–20K<br />Game night<br />Legend appearance available</p>
-          </div>
-          <div class="option-card" style="background: var(--warm-white); border-color: var(--line-on-light);">
-            <span class="label" style="color: var(--ink-on-light-dim);">Option 2</span>
-            <h3 style="color: var(--ink-on-light);">Private club</h3>
-            <p style="color: var(--ink-on-light-muted);">20 guests · $13–16K<br />Premium food &amp; beverage</p>
-          </div>
-          <div class="option-card" style="background: var(--warm-white); border-color: var(--line-on-light);">
-            <span class="label" style="color: var(--ink-on-light-dim);">Option 3</span>
-            <h3 style="color: var(--ink-on-light);">Custom</h3>
-            <p style="color: var(--ink-on-light-muted);">Tell Encore more and it builds a plan around your goal.</p>
-          </div>
-        </div>
-        <a href="/for-corporate-events/" class="btn" style="background: var(--ink-on-light); color: var(--warm-white); margin-top: 2rem;">Build an event →</a>
-      </div>
-    </section>
-
-    <!-- Proof -->
-    <section id="proof" class="section section--dark">
-      <div class="container">
-        <p class="eyebrow">Case Study</p>
-        <h2 class="display-2 accent-serif" style="margin-top: 1.25rem; font-weight: 400; font-size: clamp(1.8rem, 4.5vw, 3.4rem); max-width: 36ch;">A conference-week client dinner became a private suite night with a team shootaround.</h2>
-        <div class="timeline-metrics" style="margin-top: 3rem; background: var(--line); border-color: var(--line);">
-          <div class="timeline-metric" style="background: var(--bg-panel);"><span class="label" style="color: var(--ink-dim);">Day 1</span><strong style="color: var(--ink);">Conference</strong><br /><span style="color: var(--ink-muted); font-size: 0.85rem;">[Conference name, city]</span></div>
-          <div class="timeline-metric" style="background: var(--bg-panel);"><span class="label" style="color: var(--ink-dim);">Day [_]</span><strong style="color: var(--ink);">Companies identified</strong><br /><span style="color: var(--ink-muted); font-size: 0.85rem;">[# accounts, # buyers]</span></div>
-          <div class="timeline-metric" style="background: var(--bg-panel);"><span class="label" style="color: var(--ink-dim);">Day [_]</span><strong style="color: var(--ink);">Buyer contacted</strong><br /><span style="color: var(--ink-muted); font-size: 0.85rem;">[Title at company]</span></div>
-        </div>
-        <div class="timeline-metrics" style="margin-top: 1px; background: var(--line); border-color: var(--line);">
-          <div class="timeline-metric" style="background: var(--bg-panel);"><span class="label" style="color: var(--ink-dim);">Day [_]</span><strong style="color: var(--ink);">Event designed</strong><br /><span style="color: var(--ink-muted); font-size: 0.85rem;">[Suite, guests, experience]</span></div>
-          <div class="timeline-metric" style="background: var(--bg-panel);"><span class="label" style="color: var(--ink-dim);">Day [_]</span><strong style="color: var(--ink);">Booking closed</strong><br /><span style="color: var(--ink-muted); font-size: 0.85rem;">[$ revenue to the venue]</span></div>
         </div>
       </div>
     </section>
 
     <!-- Pilot CTA -->
-    <section id="pilot" class="section" style="background: var(--gold); color: #000000;">
-      <div class="container" style="display: flex; flex-direction: column; gap: 1.75rem;">
-        <h2 class="display-2" style="max-width: 28ch; color: #000000;">Fill your idle capacity with corporate demand using Encore's demand intelligence.</h2>
-        <p style="font-size: 1.1rem; max-width: 32ch;">Start with two bookings. No platform fee. Pay only on attributable revenue.</p>
-        <a href="/contact/" class="btn" style="background: #000000; color: #FFFFFF; align-self: flex-start;">Run an Encore Pilot</a>
+    <section id="pilot" class="section section--dark">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 2.5rem; flex-wrap: wrap;">
+        <h2 class="display-2" style="max-width: 30ch;">We'll prove upfront that the demand is real and imminent. Try Encore's Demand Intelligence for free.</h2>
+        <a href="/contact/" class="btn btn-primary" style="flex-shrink: 0;">Run an Encore Pilot</a>
+      </div>
+    </section>
+
+    <!-- Corporate bridge -->
+    <section class="section--light" style="background: var(--cream);">
+      <div class="container bridge-band">
+        <span class="bridge-band-text">Planning an event around a conference? Encore builds it for you.</span>
+        <a href="/for-corporate-events/" class="bridge-band-link">For Corporate Events →</a>
       </div>
     </section>
 
