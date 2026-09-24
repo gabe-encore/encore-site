@@ -1,24 +1,28 @@
 # Encore — book-encore.com
 
-Static marketing site for Encore. No build step, no framework, no dependencies —
-plain HTML/CSS/JS that can be hosted on any static host (Netlify, Vercel, GitHub
-Pages, S3 + CloudFront, etc.).
+Static marketing site for Encore, "the revenue engine for sports hospitality."
+No build step, no framework, no dependencies — plain HTML/CSS/JS that can be
+hosted on any static host (Netlify, Vercel, GitHub Pages, S3 + CloudFront, etc).
+Currently deployed via GitHub Pages.
 
 ## Structure
 
 ```
-index.html            Home
-experiences/index.html /experiences — illustrative event scenarios
-venues/index.html      /venues — venue & team partnership page
-contact/index.html     /contact — intake form
-assets/css/style.css   Design system + all page styles
-assets/js/config.js    Site configuration (form webhook URL)
-assets/js/main.js      Mobile nav, footer year, contact form submission
-assets/img/favicon.svg Site favicon / mark
+index.html                     Home
+for-teams/index.html           /for-teams — for sports organizations (AI Radar)
+for-corporate-events/index.html /for-corporate-events — packages, approval pages
+how-it-works/index.html        /how-it-works — the 4-step flow
+about/index.html                /about — why Encore exists, founder bio
+contact/index.html              /contact — "Run an Encore Pilot" demand-report form
+assets/css/platform.css        Design system + all page styles
+assets/js/config.js            Site configuration (form webhook URL)
+assets/js/main.js              Mobile nav, footer year, contact form submission
+assets/brand/                  Logo, team/league marks, event photography
+assets/img/                    Favicon, generated OG image
 robots.txt, sitemap.xml
 ```
 
-Each page lives at `<folder>/index.html` so that clean URLs like `/experiences/`
+Each page lives at `<folder>/index.html` so that clean URLs like `/for-teams/`
 work on any static host without extra rewrite rules.
 
 ## Before launch
@@ -26,20 +30,19 @@ work on any static host without extra rewrite rules.
 1. **Connect the contact form.** Edit `assets/js/config.js` and set
    `FORM_WEBHOOK_URL` to your form-handling endpoint (serverless function,
    Zapier/Make webhook, CRM intake, etc). The form POSTs a JSON payload with
-   `name, company, email, phone, city, dates, guestCount, inquiryType, impress`.
-2. **Confirm the contact email.** `gabe@book-encore.com` is used as a
-   placeholder throughout (footer + contact page). Replace it if the real
-   inbox differs.
-3. **Add a real Open Graph image.** All pages reference
-   `/assets/img/og-default.png` (1200×630) for social previews. No raster
-   image is included yet — add one before launch so link previews render
-   correctly on LinkedIn/Twitter/Slack, etc.
-4. **Fonts** are loaded from Google Fonts (Fraunces + Inter) via CDN. Self-host
-   if you'd rather avoid the third-party request.
-5. Everything under "illustrative example" / "placeholder" labels (the
-   `/experiences` scenarios, the contact email) is intentionally generic per
-   the brief — no client names, logos, testimonials, or stats have been
-   invented.
+   `name, email, org, role, market`.
+2. **Real team/league marks in use.** The site displays real logos and named
+   scenarios for the NBA, Detroit Pistons, New York Knicks, Los Angeles
+   Lakers, Brooklyn Nets, Barclays Center, Little Caesars Arena, Kia and
+   Tissot (the last two appear incidentally in event photography). Usage was
+   confirmed authorized during development — reconfirm before any relaunch
+   or hand-off if that authorization has since changed.
+3. **Event photography** (`assets/brand/hero-nba-arena.jpg`,
+   `event-concept-suite.jpg`) is captioned "Concept rendering" on every page
+   it appears — provenance (real event vs. composited) was not confirmed, so
+   keep that caption unless you can confirm otherwise.
+4. **Fonts** are loaded from Google Fonts (Schibsted Grotesk + Instrument
+   Serif) via CDN. Self-host if you'd rather avoid the third-party request.
 
 ## Local preview
 
@@ -52,8 +55,6 @@ python3 -m http.server 8000
 
 ## Deploying
 
-Any static host works. For Netlify/Vercel, point the project at this
-directory with no build command and no output directory override — deploy
-the files as-is.
-
-<!-- redeploy trigger -->
+Currently live via GitHub Pages (`gabe-encore/encore-site`, custom domain
+via the `CNAME` file). Any other static host works the same way — point it
+at this directory with no build command and no output directory override.
