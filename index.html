@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Encore — The Revenue Engine for Sports Hospitality</title>
-  <meta name="description" content="Encore identifies the companies entering your market, matches them to premium sports hospitality inventory, and turns the opportunity into a booked corporate event." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#05070B" />
+  <meta name="color-scheme" content="dark" />
+  <title>Premium Suite Sales for Sports Venues · Find Conference Buyers | Encore</title>
+  <meta name="description" content="Your suites are empty on nights your city is full of buyers. Encore finds the companies coming to town, matches them to your open dates, and gets bookings signed off in minutes instead of weeks." />
   <link rel="canonical" href="https://book-encore.com/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Encore" />
-  <meta property="og:title" content="Encore — The Revenue Engine for Sports Hospitality" />
-  <meta property="og:description" content="Encore identifies the companies entering your market, matches them to premium inventory, and helps turn the opportunity into a booked corporate event." />
+  <meta property="og:title" content="Your suites are empty on nights your city is full of buyers. | Encore" />
+  <meta property="og:description" content="Encore finds the companies coming to town, matches them to your open dates, and gets bookings signed off in minutes instead of weeks." />
   <meta property="og:url" content="https://book-encore.com/" />
   <meta property="og:image" content="https://book-encore.com/assets/img/og-default.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -18,310 +20,537 @@
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/platform.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  [
+    {"@context":"https://schema.org","@type":"Organization","name":"Encore","url":"https://book-encore.com","logo":"https://book-encore.com/assets/brand/encore-logo-white.png","email":"hello@book-encore.com"},
+    {"@context":"https://schema.org","@type":"WebSite","name":"Encore","url":"https://book-encore.com"},
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"How does Encore find the companies coming to our city?","acceptedAnswer":{"@type":"Answer","text":"AI Radar tracks the conferences, summits, offsites, and corporate gatherings scheduled in your market, identifies the companies attending and the people who buy hospitality, and scores each company against your open dates and inventory."}},
+      {"@type":"Question","name":"Does Encore contact buyers directly?","acceptedAnswer":{"@type":"Answer","text":"No. Encore drafts the outreach. Your rep reviews it and sends it from their own inbox. Nothing is ever auto-sent."}},
+      {"@type":"Question","name":"Does this replace our premium sales team?","acceptedAnswer":{"@type":"Answer","text":"No. Encore fills your team’s pipeline and removes the coordination work. Your reps own every relationship and close every deal."}},
+      {"@type":"Question","name":"What does the free demand report include?","acceptedAnswer":{"@type":"Answer","text":"Upcoming conferences and summits in your market over the next 90 days, the companies attending, high-fit targets matched to your open dates, estimated opportunity value, and 5 ready-to-send outreach drafts."}},
+      {"@type":"Question","name":"What does a pilot involve?","acceptedAnswer":{"@type":"Answer","text":"A pilot focuses on a defined window of open dates. Encore surfaces high-fit companies and drafts outreach, your reps send and close, and we review results together. No integration is required to start."}},
+      {"@type":"Question","name":"Does it work for dark nights and non-game events?","acceptedAnswer":{"@type":"Answer","text":"Yes. Radar looks 45–60 days ahead at open availability, including dark nights, and surfaces companies that could fill a suite, a club, or a full-venue buyout."}}
+    ]}
+  ]
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="container nav">
-      <a href="/" class="wordmark"><img src="/assets/brand/encore-logo-white.png" alt="Encore" /></a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="/for-teams/">For Teams</a>
-        <a href="/for-corporate-events/">For Corporate Events</a>
-        <a href="/how-it-works/">How It Works</a>
-        <a href="/about/">About</a>
-      </nav>
-
-      <div class="nav-actions">
-        <a href="/contact/" class="btn btn-outline-gold nav-cta">Run an Encore Pilot</a>
-        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+    <nav class="container nav" aria-label="Primary">
+      <a href="/" class="nav__logo" aria-label="Encore home"><img src="/assets/brand/encore-logo-white.png" alt="Encore" width="133" height="22" /></a>
+      <div class="nav__links">
+        <a href="#pain">For Venues</a>
+        <a href="#turn">How It Works</a>
+        <a href="#corporate">For Corporate Events</a>
+        <a href="#faq">About</a>
+        <a href="/demand-report/" class="btn btn-primary btn-sm">Get your free demand report</a>
       </div>
-    </div>
-    <nav id="mobile-menu" class="mobile-menu container" data-mobile-menu aria-label="Mobile">
-      <a href="/for-teams/">For Teams</a>
-      <a href="/for-corporate-events/">For Corporate Events</a>
-      <a href="/how-it-works/">How It Works</a>
-      <a href="/about/">About</a>
-      <a href="/contact/" class="btn btn-primary btn-block">Run an Encore Pilot</a>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+        <svg class="i i-open" aria-hidden="true"><use href="/assets/img/icons.svg#menu"/></svg>
+        <svg class="i i-close" aria-hidden="true"><use href="/assets/img/icons.svg#x"/></svg>
+      </button>
+    </nav>
+    <nav id="mobile-menu" class="mobile-menu" data-mobile-menu aria-label="Mobile">
+      <a href="#pain">For Venues</a>
+      <a href="#turn">How It Works</a>
+      <a href="#corporate">For Corporate Events</a>
+      <a href="#faq">About</a>
+      <a href="/demand-report/" class="btn btn-primary btn-lg btn-block">Get your free demand report</a>
     </nav>
   </header>
 
   <main id="main">
 
-    <!-- Hero: the promise, and the machine -->
-    <section class="hero section--dark">
-      <picture class="hero-bg">
-        <source media="(max-width: 700px)" srcset="/assets/brand/hero-nba-arena-960.jpg" />
-        <img src="/assets/brand/hero-nba-arena.jpg" alt="Executives at a private on-court corporate reception in an NBA arena, with a guest shooting free throws" loading="eager" fetchpriority="high" />
-      </picture>
-      <div class="hero-bg-overlay"></div>
-      <span class="photo-caption">Concept rendering</span>
-      <div class="container" style="padding-top: 2rem;">
-        <div class="hero-inner" style="max-width: 38rem;">
-          <p class="eyebrow hero-eyebrow">The Revenue Engine for Sports Hospitality</p>
-          <h1 class="display-1 hero-headline">Turn the conferences coming to your city into revenue.</h1>
-          <p class="lede hero-lede">Encore's AI Radar sees every company coming to town. The AI Coordination Agent turns them into booked suites, in minutes instead of weeks.</p>
-          <div class="hero-actions">
-            <a href="/contact/" class="btn btn-primary">Run an Encore Pilot</a>
-            <a href="#how" class="btn btn-ghost">See how it works</a>
+    <!-- 1 HERO -->
+    <section aria-labelledby="h1" class="container hero">
+      <div>
+        <p class="eyebrow">For premium sales teams at pro sports venues</p>
+        <h1 id="h1">Your suites are empty on nights your city is full of buyers.</h1>
+        <p class="lede">Every week, conferences bring thousands of corporate buyers to your city. Most host their clients at a steakhouse. Encore finds them and gets your suites booked in minutes instead of weeks.</p>
+        <div class="hero__actions">
+          <a href="/demand-report/" class="btn btn-primary btn-lg">Get your free demand report</a>
+          <a href="#turn" class="btn btn-ghost btn-lg">See how it works <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#arrow-right"/></svg></a>
+        </div>
+        <a href="#corporate" class="hero__corp">Planning a corporate event? Host clients at a game →</a>
+        <div class="hero__proof"><span class="dot"></span>Now piloting with NBA and NFL teams.</div>
+      </div>
+
+      <div class="panel hero-card" data-trigger="hero">
+        <div class="panel__bar">
+          <span class="badge badge--signal badge--live"><span class="badge__dot"></span>Radar · Detroit</span>
+          <span class="mono-tag">Illustrative</span>
+        </div>
+        <div class="hero-card__scope">
+          <div class="radar" style="--size:210px" aria-hidden="true">
+            <span class="radar__ring"></span><span class="radar__ring"></span><span class="radar__ring"></span><span class="radar__ring"></span>
+            <span class="radar__axis-v"></span><span class="radar__axis-h"></span>
+            <span class="radar__sweep"></span>
+            <span class="blip" style="left:22%;top:34%"></span>
+            <span class="blip is-hidden" data-hblip="pre" style="left:80%;top:60%"></span>
+            <span class="blip is-strong" data-hblip="1" style="left:70%;top:30%;--d:.4s"></span>
+            <span class="blip is-strong" data-hblip="2" style="left:32%;top:62%;--d:.8s"></span>
+            <span class="blip is-strong" data-hblip="1" style="left:60%;top:76%;--d:1.2s"></span>
+            <span class="radar__center"></span>
+          </div>
+          <div class="chip chip--1 is-on" data-hchip="0">
+            <span class="chip__icon"><svg class="i i-12" aria-hidden="true"><use href="/assets/img/icons.svg#building-2"/></svg></span>
+            <span class="chip__text"><span class="chip__n">Tier-1 auto OEM</span><span class="chip__m">Summit sponsor · Nov 11–13</span></span>
+          </div>
+          <div class="chip chip--2 is-on" data-hchip="1">
+            <span class="chip__icon"><svg class="i i-12" aria-hidden="true"><use href="/assets/img/icons.svg#building-2"/></svg></span>
+            <span class="chip__text"><span class="chip__n">EV battery maker</span><span class="chip__m">Exhibitor · Nov 11–13</span></span>
+          </div>
+          <div class="chip chip--3 is-on" data-hchip="2">
+            <span class="chip__icon"><svg class="i i-12" aria-hidden="true"><use href="/assets/img/icons.svg#building-2"/></svg></span>
+            <span class="chip__text"><span class="chip__n">Auto software company</span><span class="chip__m">Attending · Nov 11–13</span></span>
           </div>
         </div>
+        <ol class="hsteps">
+          <li class="hstep is-reached is-done" data-hstep="0">
+            <span class="stepnum">1</span>
+            <div>
+              <div class="hstep__top"><span class="mono-tag">Detected</span><span class="hstep__stat" data-stat>DONE</span></div>
+              <div class="hstep__t">Automotive Innovation Summit · Detroit</div>
+              <div class="hstep__s">Wed Nov 11 – Fri Nov 13 · <span data-hc>187</span> companies attending</div>
+            </div>
+          </li>
+          <li class="hstep is-reached is-done" data-hstep="1">
+            <span class="stepnum">2</span>
+            <div>
+              <div class="hstep__top"><span class="mono-tag">Matched to a game</span><span class="hstep__stat" data-stat>DONE</span></div>
+              <div class="hstep__t">Thu Nov 12 · Home game at Harbor Arena</div>
+              <div class="hstep__s">During their dates · <span data-hf>42</span> companies fit your suites</div>
+            </div>
+          </li>
+          <li class="hstep is-reached is-active" data-hstep="2">
+            <span class="stepnum">3</span>
+            <div>
+              <div class="hstep__top"><span class="mono-tag">Pitch drafted</span><span class="hstep__stat" data-stat>READY FOR YOUR REP</span></div>
+              <div class="hstep__t">To the FMM at a Tier-1 auto OEM</div>
+              <div class="hstep__s">Suite 204 with court access · catering for 24 · $22K</div>
+              <div class="hstep__quote is-on" data-hquote><span class="mono-tag">Subject</span>Hosting clients during the summit? Suite 204 with court access, Thu Nov 12.</div>
+            </div>
+          </li>
+        </ol>
+        <div class="panel__foot"><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#shield-check"/></svg>Drafted for your rep. Nothing sends until they click Send.</div>
+      </div>
+    </section>
 
-        <!-- Demand story -->
-        <div class="story-bar">
-          <div class="story-item" style="width: 190px; flex-shrink: 0;">
-            <span class="story-label"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--gold); display: inline-block;"></span>Coming to Detroit</span>
-            <span class="story-sub">1 of 14 this quarter</span>
+    <!-- VIDEO -->
+    <section aria-label="AI Radar in action" class="container section-pad-b">
+      <p class="eyebrow" data-reveal style="margin-bottom:20px">AI Radar in action</p>
+      <div class="video-wrap" data-reveal>
+        <video data-video muted loop playsinline autoplay preload="metadata" poster="/assets/video/encore-ai-radar-poster.jpg" aria-label="Encore AI Radar scanning a city for incoming corporate demand">
+          <source src="/assets/video/encore-ai-radar-640.mp4" type="video/mp4" media="(max-width: 700px)" />
+          <source src="/assets/video/encore-ai-radar.mp4" type="video/mp4" />
+        </video>
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Pause animation">
+          <svg class="i i-14 i-pause" aria-hidden="true"><use href="/assets/img/icons.svg#pause"/></svg>
+          <svg class="i i-14 i-play" aria-hidden="true"><use href="/assets/img/icons.svg#play"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2 PAIN MADE VISIBLE -->
+    <section id="pain" aria-labelledby="h-pain" class="band-deep">
+      <div class="container section-pad section-pad-b">
+        <h2 id="h-pain" class="h2" data-reveal style="max-width:760px">The buyers are already in town. Your pipeline can't see them.</h2>
+        <p class="eyebrow eyebrow--dim sub" data-reveal>Week of Mon Nov 9 · Illustrative</p>
+
+        <div class="compare" data-trigger="compare">
+          <div class="compare__col" data-reveal>
+            <p class="eyebrow eyebrow--dim">What your sales team sees</p>
+            <div class="compare__rows">
+              <div class="crow"><span>Season-ticket renewal</span><span class="crow__tag">EXISTING</span></div>
+              <div class="crow"><span>Inbound suite inquiry</span><span class="crow__tag">EXISTING</span></div>
+              <div class="crow"><span>Local businesses</span><span class="crow__tag">EXISTING</span></div>
+              <div class="crow crow--none">Nothing else in view.</div>
+            </div>
+            <div class="compare__total"><span class="compare__num" data-cl>3</span><span>opportunities</span></div>
           </div>
-          <div class="story-item">
-            <span class="story-big">Automotive Innovation Summit</span>
-            <span class="story-sub">Nov 12–14 · 2,840 attendees</span>
+
+          <div class="compare__col compare__col--hot" data-reveal style="--delay:150ms">
+            <p class="eyebrow eyebrow--accent">What's actually in your city</p>
+            <div class="compare__rows">
+              <div class="crow crow--city is-on"><span class="crow__name">Automotive Innovation Summit</span><span class="crow__count">187 companies</span></div>
+              <div class="crow crow--city is-on"><span class="crow__name">Healthcare CIO Forum</span><span class="crow__count">64</span></div>
+              <div class="crow crow--city is-on"><span class="crow__name">Manufacturing Leaders Offsite</span><span class="crow__count">22</span></div>
+              <div class="crow crow--city is-on"><span class="crow__name">Regional sales kickoffs</span><span class="crow__count">9</span></div>
+            </div>
+            <div class="compare__total"><span class="compare__num" data-cr>44</span><span>high-fit opportunities</span></div>
           </div>
-          <svg class="story-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 6h25M20 1l5 5-5 5"/></svg>
-          <div class="story-item">
-            <span class="story-num">42</span>
-            <span class="story-sub">target companies inside</span>
-          </div>
-          <svg class="story-arrow" width="28" height="12" viewBox="0 0 28 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 6h25M20 1l5 5-5 5"/></svg>
-          <div class="story-item">
-            <span class="story-num story-num--gold">$22K</span>
-            <span class="story-sub">suite opportunity, Nov 13</span>
-          </div>
+        </div>
+        <p class="pain-note" data-reveal>The gap between those two numbers is revenue your venue never had a chance to win.</p>
+
+        <!-- 3 COST OF THE PAIN -->
+        <h2 class="h2 pain-h" data-reveal>Where the revenue goes.</h2>
+        <div class="pain-grid">
+          <article class="pain-card" data-reveal>
+            <span class="eyebrow eyebrow--dim">01</span>
+            <h3>Unseen.</h3>
+            <p>Conference buyers never make it into your CRM. No one on your team knew they were coming.</p>
+          </article>
+          <article class="pain-card" data-reveal>
+            <span class="eyebrow eyebrow--dim">02</span>
+            <h3>Unsold.</h3>
+            <p>Suites stay empty on game nights, and dark nights earn nothing, in the very weeks your city’s hotels are full.</p>
+          </article>
+          <article class="pain-card" data-reveal>
+            <span class="eyebrow eyebrow--dim">03</span>
+            <h3>Lost to the steakhouse.</h3>
+            <p>Those companies still host their clients. They just book a private room downtown because it was easier.</p>
+          </article>
+          <article class="pain-card" data-reveal>
+            <span class="eyebrow eyebrow--dim">04</span>
+            <h3>Stuck in approvals.</h3>
+            <p>When a buyer does call, events, F&amp;B, ops, and merch sign off one after another. Six weeks later, the conference is over.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- The blind spot -->
-    <section id="how" class="section section--light">
-      <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 3rem; flex-wrap: wrap;">
-          <h2 class="display-2" style="max-width: 24ch;">Your city is full of buyers. Your pipeline isn't.</h2>
-          <p class="lede lede--on-light" style="max-width: 24ch;">The same week. Two very different pictures.</p>
-        </div>
-
-        <div class="blindspot-grid">
-          <div class="blindspot-panel blindspot-panel--light">
-            <div class="blindspot-head"><span>What your sales team sees</span><span>Week of Nov 10</span></div>
-            <div class="blindspot-rows">
-              <div class="blindspot-row"><span>Season-ticket renewal</span><span>Existing</span></div>
-              <div class="blindspot-row"><span>Inbound suite inquiry</span><span>Existing</span></div>
-              <div class="blindspot-empty">Nothing else in view</div>
+    <!-- 4 THE TURN -->
+    <section id="turn" aria-labelledby="h-turn">
+      <div class="container section-pad">
+        <h2 id="h-turn" class="h2" data-reveal style="max-width:820px">Encore closes the gap, from first signal to signed booking.</h2>
+        <p class="lede sub" data-reveal>Two ways in. One turnkey booking. Your reps stay in control the whole way.</p>
+        <div class="products">
+          <a href="#inventory" class="product" data-reveal>
+            <div class="product__top">
+              <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#radar"/></svg></span>
+              <span class="eyebrow eyebrow--dim">Outbound</span>
             </div>
-            <div class="blindspot-total"><span class="blindspot-total-num">2</span><span class="blindspot-total-label">opportunities</span></div>
-          </div>
-
-          <div class="blindspot-panel blindspot-panel--dark">
-            <div class="blindspot-head"><strong>What Encore sees</strong><span>Week of Nov 10</span></div>
-            <div class="blindspot-rows">
-              <div class="blindspot-row"><span>Automotive Innovation Summit</span><span>187 companies</span></div>
-              <div class="blindspot-row"><span>Healthcare CIO Forum</span><span>64 companies</span></div>
-              <div class="blindspot-row"><span>Manufacturing Leaders Offsite</span><span>22 companies</span></div>
-              <div class="blindspot-row"><span>Regional sales kickoffs</span><span>9 companies</span></div>
-              <div class="blindspot-row"><span>Your existing pipeline</span><span>2</span></div>
-            </div>
-            <div class="blindspot-total"><span class="blindspot-total-num">44</span><span class="blindspot-total-label">high-fit opportunities</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Matched to your dates -->
-    <section class="section section--dark">
-      <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 3rem; flex-wrap: wrap;">
-          <h2 class="display-2" style="max-width: 24ch;">Every open date, matched to who's in town.</h2>
-          <p class="lede" style="max-width: 24ch;">Your idle inventory, finally next to the demand that could fill it.</p>
-        </div>
-
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <div class="sched-head-row">
-            <span class="sched-head-label"><img src="/assets/brand/logo-pistons.png" alt="Detroit Pistons" />Little Caesars Arena · Pistons home schedule</span>
-            <span class="sched-legend">
-              <span><span class="sched-swatch"></span>Game night</span>
-              <span><span class="sched-swatch sched-swatch--dark"></span>Dark night · arena is theirs</span>
-            </span>
-          </div>
-          <div class="table-scroll">
-          <div class="sched-wrap">
-            <div class="sched-row" style="grid-template-columns: 150px repeat(5, minmax(0, 1fr));">
-              <span class="sched-row-label">Date</span>
-              <span class="sched-cell">Wed Nov 5</span>
-              <span class="sched-cell sched-cell--hit sched-cell--gold">Thu Nov 13</span>
-              <span class="sched-cell sched-cell--dark-bg">Tue Nov 18</span>
-              <span class="sched-cell">Wed Jan 7</span>
-              <span class="sched-cell sched-cell--dark-bg">Wed Jan 21</span>
-            </div>
-            <div class="sched-row" style="grid-template-columns: 150px repeat(5, minmax(0, 1fr));">
-              <span class="sched-row-label">Night</span>
-              <div class="sched-cell sched-cell-logo"><img src="/assets/brand/logo-knicks.png" alt="Knicks" /><span class="team-label">Game night · vs Knicks</span></div>
-              <div class="sched-cell sched-cell-logo sched-cell--hit"><img src="/assets/brand/logo-lakers.svg" alt="Lakers" /><span class="team-label">Game night · vs Lakers</span></div>
-              <div class="sched-cell sched-cell-logo sched-cell--dark-bg"><span class="sched-dark-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9C5BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><span class="team-label">Dark night · no event</span></div>
-              <div class="sched-cell sched-cell-logo"><img src="/assets/brand/logo-nets.svg" alt="Brooklyn Nets" style="background: #fff; border-radius: 50%; padding: 2px; box-sizing: border-box;" /><span class="team-label">Game night · vs Nets</span></div>
-              <div class="sched-cell sched-cell-logo sched-cell--dark-bg"><span class="sched-dark-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9C5BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span><span class="team-label">Dark night · no event</span></div>
-            </div>
-            <div class="sched-row" style="grid-template-columns: 150px repeat(5, minmax(0, 1fr));">
-              <span class="sched-row-label">Available</span>
-              <span class="sched-cell">4 suites open</span>
-              <span class="sched-cell sched-cell--hit">2 suites open</span>
-              <span class="sched-cell sched-cell--dark-bg sched-cell--gold">Entire arena</span>
-              <span class="sched-cell">7 suites open</span>
-              <span class="sched-cell sched-cell--dark-bg sched-cell--gold">Entire arena</span>
-            </div>
-            <div class="sched-row" style="grid-template-columns: 150px repeat(5, minmax(0, 1fr));">
-              <span class="sched-row-label">In town</span>
-              <span class="sched-cell sched-cell--dim">None</span>
-              <span class="sched-cell sched-cell--label sched-cell--hit">Automotive Innovation Summit</span>
-              <span class="sched-cell sched-cell--dim sched-cell--dark-bg">None</span>
-              <span class="sched-cell sched-cell--label">Materials Week</span>
-              <span class="sched-cell sched-cell--label sched-cell--dark-bg">EV Supply Chain Forum</span>
-            </div>
-            <div class="sched-row" style="grid-template-columns: 150px repeat(5, minmax(0, 1fr)); border-bottom: 0;">
-              <span class="sched-row-label">Encore</span>
-              <span class="sched-cell"></span>
-              <span class="sched-cell sched-cell--hit sched-cell--gold">Fit 94 · $22K</span>
-              <span class="sched-cell sched-cell--dark-bg"></span>
-              <span class="sched-cell sched-cell--gold">Fit 89 · $14K</span>
-              <span class="sched-cell sched-cell--gold sched-cell--dark-bg">Fit 86 · Full-venue buyout</span>
-            </div>
-          </div>
-          </div>
-        </div>
-        <p style="font-size: 0.8rem; color: var(--ink-dim); margin-top: 1rem;">Illustrative data.</p>
-      </div>
-    </section>
-
-    <!-- Two ways in + AI Coordination Agent -->
-    <section id="agent" class="section section--light">
-      <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 3rem; flex-wrap: wrap; margin-bottom: 2.5rem;">
-          <h2 class="display-2" style="max-width: 20ch;">Two ways in. One turnkey booking.</h2>
-          <p class="lede lede--on-light" style="max-width: 26ch;">AI Radar finds the companies coming to town. Your venue's planning page captures the ones already planning. Either way, the AI Coordination Agent does the rest.</p>
-        </div>
-
-        <div class="twoway-grid">
-          <div class="twoway-card">
-            <span class="twoway-eyebrow">Outbound · Third-Party Signals</span>
             <h3>AI Radar</h3>
-            <p>Tracks the conferences, summits and offsites coming to your market, finds the companies with budget and the people who buy hospitality, and reaches them before they book a steakhouse.</p>
-          </div>
-          <div class="twoway-card">
-            <span class="twoway-eyebrow">Inbound · First-Party Signals</span>
+            <p>Spots the conferences, summits, and offsites coming to your market, finds the companies with budget and the people who buy hospitality, and hands your reps ready-to-send outreach before those companies book a steakhouse.</p>
+            <span class="product__cta">See Radar matches →</span>
+          </a>
+          <a href="#corporate" class="product" data-reveal style="--delay:120ms">
+            <div class="product__top">
+              <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#layout-template"/></svg></span>
+              <span class="eyebrow eyebrow--dim">Inbound</span>
+            </div>
             <h3>Venue planning pages</h3>
-            <p>Buyers already planning pick a turnkey package or make their own within budget, with transparent pricing, a 24-hour hold and an approval-ready plan they can forward internally.</p>
-          </div>
-          <div class="twoway-card twoway-card--dark">
-            <span class="twoway-eyebrow">Both Sides, Fully Turnkey</span>
+            <p>Buyers already planning pick a turnkey package or make it their own, with transparent pricing, a 24-hour hold, and an approval-ready plan they forward internally.</p>
+            <span class="product__cta">See the buyer view →</span>
+          </a>
+          <a href="#coordination" class="product" data-reveal style="--delay:240ms">
+            <div class="product__top">
+              <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#workflow"/></svg></span>
+              <span class="eyebrow eyebrow--dim">Close</span>
+            </div>
             <h3>AI Coordination Agent</h3>
-            <p>Builds the package, holds the space and collects sign-off from events, F&amp;B, ops and merch in parallel. The buyer and your premium team see every status live.</p>
-          </div>
+            <p>Builds the package, holds the space, and collects sign-off from events, F&amp;B, ops, and merch in parallel. Both sides see every status live.</p>
+            <span class="product__cta">Watch a booking close →</span>
+          </a>
         </div>
+      </div>
+    </section>
 
-        <div style="display: grid; gap: 2.5rem;" class="agent-detail-grid">
-          <div style="max-width: 26rem;">
-            <h3 class="display-3" style="color: var(--ink-on-light);">A six-week booking, done in minutes.</h3>
-            <div style="display: flex; flex-direction: column; margin-top: 1.5rem; border-top: 1px solid var(--line-on-light);">
-              <div style="padding: 1.1rem 0; border-bottom: 1px solid var(--line-on-light);"><span class="label" style="color: var(--ink-on-light-dim); display: block; margin-bottom: 0.3rem;">Today</span><span style="font-size: 1.02rem; line-height: 1.45; color: var(--ink-on-light);">Great teams, no shared system. Every event needs sign-off from events, F&amp;B, ops and merch, one after another, and the buyer waits.</span></div>
-              <div style="padding: 1.1rem 0; border-bottom: 1px solid var(--line-on-light);"><span class="label" style="color: var(--gold-dim); display: block; margin-bottom: 0.3rem;">With Encore</span><span style="font-size: 1.02rem; line-height: 1.45; color: var(--ink-on-light);">Every team signs off in parallel, the buyer gets an approval-ready plan instantly, and everyone sees the same status.</span></div>
-              <p style="padding-top: 0.75rem; font-size: 1.02rem; font-weight: 600; color: var(--ink-on-light);">Encore works through your premium sales team, never around it. Your reps own the relationship and close every deal.</p>
+    <!-- 5 CALENDAR -->
+    <section id="inventory" aria-labelledby="h-cal">
+      <div class="container section-pad">
+        <h2 id="h-cal" class="h2" data-reveal>Every open date, matched to who's in town.</h2>
+        <p class="lede sub" data-reveal>Your idle inventory, finally next to the demand that could fill it.</p>
+
+        <div class="cal" data-trigger="calendar" data-reveal>
+          <div class="cal__head">
+            <div class="cal__title"><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#calendar-check"/></svg><b>Harbor Arena</b><span>· home schedule</span></div>
+            <div class="cal__legend">
+              <span class="legend">Game night · suite sales</span>
+              <span class="legend legend--dark">Dark night · venue buyouts</span>
+              <span class="cal__hint">Tap a date</span>
+              <span class="mono-tag">Illustrative</span>
             </div>
           </div>
-          <div class="agent-panel">
-            <div class="agent-panel-head"><strong>AI Coordination Agent · Thu Nov 13 · Suite 204</strong><span>Automotive Innovation Summit</span></div>
-            <div class="agent-panel-row"><span class="agent-panel-label">Buyer</span><span class="agent-panel-text">VP Marketing at Ford identified by AI Radar. Intro sent.</span></div>
-            <div class="agent-panel-row"><span class="agent-panel-label">Package</span><span class="agent-panel-text">Suite 204 + catering for 24 guests, within budget.</span></div>
-            <div class="agent-panel-row"><span class="agent-panel-label">Hold</span><span class="agent-panel-text">Suite 204 held for 24 hours, 6:30–10 PM.</span></div>
-            <div class="agent-panel-row"><span class="agent-panel-label">Approval page</span><span class="agent-panel-text">Pricing and run-of-show sent to the buyer for internal sign-off.</span></div>
-            <div class="agent-panel-row" style="border-bottom: 0;"><span class="agent-panel-label">Venue sign-off</span><span class="agent-panel-text">Events, F&amp;B, ops and merch approved in parallel.</span></div>
-            <div class="agent-panel-close">
-              <span class="agent-panel-close-label">Ready for your team to close</span>
-              <span class="agent-panel-close-amount">$22,000</span>
+          <div class="cal__grid" role="group" aria-label="Harbor Arena open dates matched to incoming demand">
+            <div class="cal__labels" aria-hidden="true">
+              <span></span><span>NIGHT</span><span>AVAILABLE</span><span>IN TOWN</span><span>ENCORE FIT</span>
+            </div>
+            <button type="button" class="cal-col is-lit" data-col="0" aria-pressed="false">
+              <span class="cal-col__d">Thu Nov 5</span>
+              <span class="cal-col__night"><span class="night-pill"><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#trophy"/></svg>Game night</span><span class="cal-col__opp">Suite opportunity</span></span>
+              <span class="cal-col__avail" data-label="AVAILABLE">4 suites</span>
+              <span class="cal-col__town is-none" data-label="IN TOWN">None</span>
+              <span class="cal-col__fit"><span class="fit">—</span></span>
+            </button>
+            <button type="button" class="cal-col is-lit is-hot is-sel" data-col="1" aria-pressed="true">
+              <span class="cal-col__d">Thu Nov 12</span>
+              <span class="cal-col__night"><span class="night-pill"><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#trophy"/></svg>Game night</span><span class="cal-col__opp">Suite opportunity</span></span>
+              <span class="cal-col__avail" data-label="AVAILABLE">2 suites</span>
+              <span class="cal-col__town" data-label="IN TOWN">Automotive Innovation Summit</span>
+              <span class="cal-col__fit"><span class="fit" data-fit="Fit 94 · $22K">Fit 94 · $22K</span></span>
+            </button>
+            <button type="button" class="cal-col is-lit" data-col="2" aria-pressed="false">
+              <span class="cal-col__d">Wed Nov 18</span>
+              <span class="cal-col__night"><span class="night-pill night-pill--dark"><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#moon"/></svg>Dark night</span><span class="cal-col__opp">Full-venue opportunity</span></span>
+              <span class="cal-col__avail" data-label="AVAILABLE">Entire arena</span>
+              <span class="cal-col__town is-none" data-label="IN TOWN">None</span>
+              <span class="cal-col__fit"><span class="fit">—</span></span>
+            </button>
+            <button type="button" class="cal-col is-lit is-hot" data-col="3" aria-pressed="false">
+              <span class="cal-col__d">Wed Jan 6</span>
+              <span class="cal-col__night"><span class="night-pill"><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#trophy"/></svg>Game night</span><span class="cal-col__opp">Suite opportunity</span></span>
+              <span class="cal-col__avail" data-label="AVAILABLE">7 suites</span>
+              <span class="cal-col__town" data-label="IN TOWN">Materials Week</span>
+              <span class="cal-col__fit"><span class="fit" data-fit="Fit 89 · $14K">Fit 89 · $14K</span></span>
+            </button>
+            <button type="button" class="cal-col is-lit is-hot" data-col="4" aria-pressed="false">
+              <span class="cal-col__d">Wed Jan 20</span>
+              <span class="cal-col__night"><span class="night-pill night-pill--dark"><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#moon"/></svg>Dark night</span><span class="cal-col__opp">Full-venue opportunity</span></span>
+              <span class="cal-col__avail" data-label="AVAILABLE">Entire arena</span>
+              <span class="cal-col__town" data-label="IN TOWN">EV Supply Chain Forum</span>
+              <span class="cal-col__fit"><span class="fit" data-fit="Fit 86 · Buyout">Fit 86 · Buyout</span></span>
+            </button>
+          </div>
+          <div class="cal__foot">
+            <div class="cal__sel" aria-live="polite">
+              <span class="cal__sel-eyebrow" data-sel-eyebrow>THU NOV 12 · GAME NIGHT · 2 SUITES</span>
+              <span class="cal__sel-detail" data-sel-detail>Automotive Innovation Summit, Nov 11–13 · 187 companies attending · 42 fit your suites · $22K suite opportunity.</span>
+            </div>
+            <div class="cal__note">
+              <svg class="i i-15" aria-hidden="true"><use href="/assets/img/icons.svg#moon"/></svg>
+              <span><strong>Dark nights included.</strong> Radar looks 45–60 days ahead at open availability and surfaces the companies that could fill it.</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pilot CTA -->
-    <section id="pilot" class="section section--dark">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 2.5rem; flex-wrap: wrap;">
-        <div style="max-width: 40rem;">
-          <h2 class="display-2" style="max-width: 22ch;">Get a free 90-day demand report for your arena.</h2>
-          <p class="lede" style="margin-top: 1rem; max-width: 38ch;">AI Radar shows you which companies are coming to your market, when, and what they could be worth, before you commit to anything.</p>
+    <!-- 6 COORDINATION -->
+    <section id="coordination" aria-labelledby="h-coord">
+      <div class="container section-pad">
+        <h2 id="h-coord" class="h2" data-reveal>A six-week booking, done in minutes.</h2>
+
+        <div class="coord" data-trigger="coord">
+          <div class="coord__left">
+            <div class="tl" data-reveal>
+              <p class="eyebrow eyebrow--dim">Today</p>
+              <p class="tl__copy">Great teams, no shared system. Every event needs sign-off from events, F&amp;B, ops, and merch, one after another, and the buyer waits.</p>
+              <div class="bars is-on" data-bars>
+                <div class="bar"><span class="bar__n">Events</span><div class="bar__track"><span class="bar__fill" style="--left:0%;--delay:0ms"></span></div></div>
+                <div class="bar"><span class="bar__n">F&amp;B</span><div class="bar__track"><span class="bar__fill" style="--left:25%;--delay:650ms"></span></div></div>
+                <div class="bar"><span class="bar__n">Ops</span><div class="bar__track"><span class="bar__fill" style="--left:50%;--delay:1300ms"></span></div></div>
+                <div class="bar"><span class="bar__n">Merch</span><div class="bar__track"><span class="bar__fill" style="--left:75%;--delay:1950ms"></span></div></div>
+                <div class="bar" style="margin-top:4px"><span></span><div class="bar__axis"><span>WK 1</span><span>WK 3</span><span>WK 6</span></div></div>
+              </div>
+            </div>
+            <div class="tl tl--encore" data-reveal style="--delay:120ms">
+              <p class="eyebrow eyebrow--accent">With Encore</p>
+              <p class="tl__copy">Every team signs off in parallel, the buyer gets an approval-ready plan instantly, and everyone sees the same status.</p>
+              <div class="bars is-on" data-bars>
+                <div class="bar"><span class="bar__n">Events</span><div class="bar__track"><span class="bar__fill" style="--delay:200ms"></span></div></div>
+                <div class="bar"><span class="bar__n">F&amp;B</span><div class="bar__track"><span class="bar__fill" style="--delay:240ms"></span></div></div>
+                <div class="bar"><span class="bar__n">Ops</span><div class="bar__track"><span class="bar__fill" style="--delay:280ms"></span></div></div>
+                <div class="bar"><span class="bar__n">Merch</span><div class="bar__track"><span class="bar__fill" style="--delay:320ms"></span></div></div>
+                <div class="bar" style="margin-top:4px"><span></span><div class="bar__axis"><span>MINUTES</span><span></span><span>WK 6</span></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" data-reveal style="--delay:200ms">
+            <div class="agent__head">
+              <div>
+                <div class="agent__title"><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#workflow"/></svg>AI Coordination Agent</div>
+                <p class="agent__meta">Thu Nov 12 · Suite 204 · Automotive Innovation Summit</p>
+              </div>
+              <div class="agent__elapsed">
+                <div class="mono-tag">Elapsed</div>
+                <div data-elapsed>04:12</div>
+              </div>
+            </div>
+            <ol class="agent__steps">
+              <li class="astep is-reached is-done" data-astep="0">
+                <span class="stepnum">1</span>
+                <div><div class="astep__k">BUYER</div><div class="astep__t">VP Marketing at a Tier-1 auto OEM</div><div class="astep__s">Identified by AI Radar · intro drafted for your rep</div></div>
+                <div class="astep__status"><span class="badge badge--positive"><span class="badge__dot"></span>Done</span><span class="badge badge--signal badge--live"><span class="badge__dot"></span>Working</span></div>
+              </li>
+              <li class="astep is-reached is-done" data-astep="1">
+                <span class="stepnum">2</span>
+                <div><div class="astep__k">PACKAGE</div><div class="astep__t">Suite 204 + catering for 24</div><div class="astep__s">Within budget</div></div>
+                <div class="astep__status"><span class="badge badge--positive"><span class="badge__dot"></span>Done</span><span class="badge badge--signal badge--live"><span class="badge__dot"></span>Working</span></div>
+              </li>
+              <li class="astep is-reached is-done" data-astep="2">
+                <span class="stepnum">3</span>
+                <div><div class="astep__k">HOLD</div><div class="astep__t">24 hours</div><div class="astep__s">Thu Nov 12 · 6:30–10 PM</div></div>
+                <div class="astep__status"><span class="badge badge--positive"><span class="badge__dot"></span>Done</span><span class="badge badge--signal badge--live"><span class="badge__dot"></span>Working</span></div>
+              </li>
+              <li class="astep is-reached is-done" data-astep="3">
+                <span class="stepnum">4</span>
+                <div><div class="astep__k">APPROVAL PAGE</div><div class="astep__t">Sent to the buyer</div><div class="astep__s">Approval-ready plan, forwarded internally</div></div>
+                <div class="astep__status"><span class="badge badge--positive"><span class="badge__dot"></span>Done</span><span class="badge badge--signal badge--live"><span class="badge__dot"></span>Working</span></div>
+              </li>
+              <li class="astep is-reached is-done" data-astep="4">
+                <span class="stepnum">5</span>
+                <div>
+                  <div class="astep__k">VENUE SIGN-OFF</div><div class="astep__t">Events, F&amp;B, ops, merch</div><div class="astep__s">Approved in parallel</div>
+                  <div class="chips">
+                    <span class="schip is-on" data-schip>Events</span><span class="schip is-on" data-schip>F&amp;B</span><span class="schip is-on" data-schip>Ops</span><span class="schip is-on" data-schip>Merch</span>
+                  </div>
+                </div>
+                <div class="astep__status"><span class="badge badge--positive"><span class="badge__dot"></span>Done</span><span class="badge badge--signal badge--live"><span class="badge__dot"></span>Working</span></div>
+              </li>
+            </ol>
+            <div class="agent__final is-on" data-final>
+              <div>
+                <div class="agent__final-label">Ready for your team to close</div>
+                <div class="agent__value" data-value>$22,000</div>
+              </div>
+              <div class="agent__final-r">
+                <span class="mono-tag">Illustrative</span>
+                <button type="button" class="replay" data-replay><svg class="i i-13" aria-hidden="true"><use href="/assets/img/icons.svg#rotate-ccw"/></svg>Replay</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="/contact/" class="btn btn-primary" style="flex-shrink: 0;">Run an Encore Pilot</a>
       </div>
     </section>
 
-    <!-- FAQ + corporate band -->
-    <section class="section section--light">
-      <div class="container">
-        <h2 class="display-2" style="color: var(--ink-on-light); margin-bottom: 2.5rem;">Corporate events at sports venues: common questions</h2>
-        <div class="faq-grid faq-grid--three">
-          <div class="faq-item">
-            <h3>How much does a private suite cost for a corporate event?</h3>
-            <p>A single suite for 18–30 guests typically runs $15K–$35K depending on the game. Large lounges for 40–50 guests start around $15K plus food and drinks.</p>
+    <!-- 7 CONTROL -->
+    <section aria-labelledby="h-ctrl">
+      <div class="container section-pad">
+        <h2 id="h-ctrl" class="h2" data-reveal style="max-width:760px">Built to work with your team.</h2>
+        <div class="control">
+          <div class="control__item" data-reveal>
+            <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#user-check"/></svg>
+            <p>Your reps own every relationship and close every deal.</p>
           </div>
-          <div class="faq-item">
-            <h3>Can we host an event on a non-game day?</h3>
-            <p>Yes. On dark nights, arenas can host private receptions and even on-court events, subject to the venue's calendar.</p>
+          <div class="control__item" data-reveal style="--delay:120ms">
+            <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#send"/></svg>
+            <p>Nothing is sent without your rep clicking Send, from their own inbox.</p>
           </div>
-          <div class="faq-item">
-            <h3>How far ahead should we book?</h3>
-            <p>Ideally six to eight weeks. Many venues need 45–60 days for non-game events, and the best game nights sell out early.</p>
+          <div class="control__item" data-reveal style="--delay:240ms">
+            <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#plug"/></svg>
+            <p>Works alongside the systems your team already uses.</p>
           </div>
         </div>
-        <div class="bridge-band" style="border-top: 1px solid var(--line-on-light); margin-top: 2.5rem; padding-top: 2.5rem;">
-          <span class="bridge-band-text">Planning an event around a conference? Pick a turnkey package or build your own.</span>
-          <a href="/for-corporate-events/" class="bridge-band-link">For Corporate Events →</a>
+      </div>
+    </section>
+
+    <!-- 8 PROOF -->
+    <section aria-labelledby="h-proof">
+      <div class="container section-pad">
+        <div class="proof" data-reveal>
+          <div>
+            <h2 id="h-proof">Early results.</h2>
+            <p class="proof__pilot"><span class="dot"></span>Now piloting with NBA and NFL teams.</p>
+          </div>
+          <figure>
+            <p class="eyebrow eyebrow--dim">Case story · NBA arena · Dark night</p>
+            <blockquote>An NBA arena booked a $20K+ dark night that would otherwise have sat empty.</blockquote>
+            <figcaption>The buyer was a well-funded company from outside the country. Encore’s Radar identified them before they arrived and approached them with a compelling turnkey package.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 OFFER -->
+    <section id="report" aria-labelledby="h-offer">
+      <div class="container section-pad section-pad-b">
+        <div class="offer" data-reveal>
+          <div>
+            <h2 id="h-offer">See the demand you're missing, free.</h2>
+            <p class="lede">Get a 90-day demand report for your arena: which companies are coming to your city, when, and what they could be worth. No commitment, no integration required.</p>
+            <div class="offer__cta"><a href="/demand-report/" class="btn btn-signal btn-lg">Get my demand report <svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#arrow-right"/></svg></a></div>
+          </div>
+          <div class="offer__radar">
+            <div class="radar" style="--size:300px" aria-hidden="true">
+              <span class="radar__ring"></span><span class="radar__ring"></span><span class="radar__ring"></span><span class="radar__ring"></span>
+              <span class="radar__axis-v"></span><span class="radar__axis-h"></span>
+              <span class="radar__sweep"></span>
+              <span class="blip is-strong" style="left:68%;top:28%"></span>
+              <span class="blip is-strong" style="left:30%;top:58%;--d:.4s"></span>
+              <span class="blip" style="left:62%;top:72%"></span>
+              <span class="blip" style="left:24%;top:32%"></span>
+              <span class="blip" style="left:80%;top:54%"></span>
+              <span class="radar__center"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 CORPORATE -->
+    <section id="corporate" aria-labelledby="h-corp" class="corp">
+      <div class="container corp__inner">
+        <div class="corp__copy">
+          <p class="eyebrow">For field marketing &amp; event teams</p>
+          <h2 id="h-corp">Planning a corporate event?</h2>
+          <p>Host your clients in a private suite or on the court during the conference they're already attending. Turnkey packages, an approval-ready plan, and a 24-hour hold.</p>
+        </div>
+        <a href="mailto:hello@book-encore.com?subject=Hosting%20clients%20at%20a%20game" class="btn btn-secondary btn-lg">Host clients at a game →</a>
+      </div>
+    </section>
+
+    <!-- 11 FAQ -->
+    <section id="faq" aria-labelledby="h-faq">
+      <div class="container section-pad section-pad-b faq">
+        <h2 id="h-faq" class="h2">Questions from venue teams.</h2>
+        <div class="faq__list" data-faq>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="true" aria-controls="faq-a0" id="faq-q0"><span>How does Encore find the companies coming to our city?</span><span class="faq__icon"><svg class="i i-14" aria-hidden="true"><use href="/assets/img/icons.svg#plus"/></svg></span></button>
+            <div class="faq__a is-open" id="faq-a0" role="region" aria-labelledby="faq-q0"><div><p>AI Radar tracks the conferences, summits, offsites, and corporate gatherings scheduled in your market, identifies the companies attending and the people who buy hospitality, and scores each company against your open dates and inventory.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1"><span>Does Encore contact buyers directly?</span><span class="faq__icon"><svg class="i i-14" aria-hidden="true"><use href="/assets/img/icons.svg#plus"/></svg></span></button>
+            <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>No. Encore drafts the outreach. Your rep reviews it and sends it from their own inbox. Nothing is ever auto-sent.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2"><span>Does this replace our premium sales team?</span><span class="faq__icon"><svg class="i i-14" aria-hidden="true"><use href="/assets/img/icons.svg#plus"/></svg></span></button>
+            <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>No. Encore fills your team’s pipeline and removes the coordination work. Your reps own every relationship and close every deal.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3"><span>What does the free demand report include?</span><span class="faq__icon"><svg class="i i-14" aria-hidden="true"><use href="/assets/img/icons.svg#plus"/></svg></span></button>
+            <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>Upcoming conferences and summits in your market over the next 90 days, the companies attending, high-fit targets matched to your open dates, estimated opportunity value, and 5 ready-to-send outreach drafts.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4"><span>What does a pilot involve?</span><span class="faq__icon"><svg class="i i-14" aria-hidden="true"><use href="/assets/img/icons.svg#plus"/></svg></span></button>
+            <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>A pilot focuses on a defined window of open dates. Encore surfaces high-fit companies and drafts outreach, your reps send and close, and we review results together. No integration is required to start.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5"><span>Does it work for dark nights and non-game events?</span><span class="faq__icon"><svg class="i i-14" aria-hidden="true"><use href="/assets/img/icons.svg#plus"/></svg></span></button>
+            <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>Yes. Radar looks 45–60 days ahead at open availability, including dark nights, and surfaces companies that could fill a suite, a club, or a full-venue buyout.</p></div></div>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- 12 FOOTER -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <a href="/" class="wordmark"><img src="/assets/brand/encore-logo-white.png" alt="Encore" /></a>
-          <p class="footer-blurb">The revenue engine for sports hospitality.</p>
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" aria-label="Encore home"><img src="/assets/brand/encore-logo-white.png" alt="Encore" width="133" height="22" loading="lazy" /></a>
+          <p>The demand intelligence engine for premium venues.</p>
+          <a href="mailto:hello@book-encore.com">hello@book-encore.com</a>
         </div>
-        <div class="footer-cols">
-          <div class="footer-col">
-            <h4>Product</h4>
-            <ul>
-              <li><a href="/for-teams/">For Teams</a></li>
-              <li><a href="/for-corporate-events/">For Corporate Events</a></li>
-              <li><a href="/how-it-works/">How It Works</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/contact/">Run an Encore Pilot</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Get in touch</h4>
-            <ul>
-              <li><a href="mailto:gabe@book-encore.com">gabe@book-encore.com</a></li>
-            </ul>
-          </div>
-        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#pain">For Venues</a>
+          <a href="#inventory">Radar</a>
+          <a href="#coordination">Coordination Agent</a>
+          <a href="#turn">Planning Pages</a>
+          <a href="#corporate">For Corporate Events</a>
+          <a href="#turn">How It Works</a>
+          <a href="#faq">About</a>
+          <a href="mailto:hello@book-encore.com">Contact</a>
+          <a href="/demand-report/">Demand Report</a>
+        </nav>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; <span data-year>2026</span> Encore. All rights reserved.</p>
-        <p>book-encore.com</p>
+      <div class="footer__legal">
+        <span>© <span data-year>2026</span> Encore</span>
+        <span>All example venues, teams, companies, and figures on this site are illustrative.</span>
       </div>
     </div>
   </footer>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

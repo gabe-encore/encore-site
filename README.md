@@ -8,41 +8,37 @@ Currently deployed via GitHub Pages.
 ## Structure
 
 ```
-index.html                     Home
-for-teams/index.html           /for-teams — for sports organizations (AI Radar)
-for-corporate-events/index.html /for-corporate-events — packages, approval pages
-how-it-works/index.html        /how-it-works — the 4-step flow
-about/index.html                /about — why Encore exists, founder bio
-contact/index.html              /contact — "Run an Encore Pilot" demand-report form
-assets/css/platform.css        Design system + all page styles
+index.html                     Home (single long page; nav links are in-page anchors)
+demand-report/index.html       /demand-report — free 90-day demand report form
+contact/index.html             Redirects to /demand-report/ (old URL)
+assets/css/site.css            Encore Design System (dark) + Home/Demand Report styles
+assets/js/site.js              Nav, scroll reveals, hero/calendar/agent animations, FAQ, video, form
 assets/js/config.js            Site configuration (form webhook URL)
-assets/js/main.js              Mobile nav, footer year, contact form submission
+assets/img/icons.svg           Lucide icon sprite (lucide-static v0.460.0, ISC)
+assets/video/                  AI Radar video (1280px desktop, 640px mobile) + poster frame
 assets/brand/                  Logo, team/league marks, event photography
-assets/img/                    Favicon, generated OG image
+assets/img/                    Favicon, OG image (from the AI Radar graphic)
 robots.txt, sitemap.xml
 ```
 
-Each page lives at `<folder>/index.html` so that clean URLs like `/for-teams/`
-work on any static host without extra rewrite rules.
+Home and Demand Report are ported from the Claude Design canvas. The older
+pages (`for-teams/`, `for-corporate-events/`, `how-it-works/`, `about/`) still
+exist on the previous design (`assets/css/platform.css`, `assets/js/main.js`)
+but are no longer linked from the nav or listed in the sitemap.
+
+Each page lives at `<folder>/index.html` so that clean URLs work on any static
+host without extra rewrite rules.
 
 ## Before launch
 
-1. **Connect the contact form.** Edit `assets/js/config.js` and set
-   `FORM_WEBHOOK_URL` to your form-handling endpoint (serverless function,
-   Zapier/Make webhook, CRM intake, etc). The form POSTs a JSON payload with
-   `name, email, org, role, market`.
-2. **Real team/league marks in use.** The site displays real logos and named
-   scenarios for the NBA, Detroit Pistons, New York Knicks, Los Angeles
-   Lakers, Brooklyn Nets, Barclays Center, Little Caesars Arena, Kia and
-   Tissot (the last two appear incidentally in event photography). Usage was
-   confirmed authorized during development — reconfirm before any relaunch
-   or hand-off if that authorization has since changed.
-3. **Event photography** (`assets/brand/hero-nba-arena.jpg`,
-   `event-concept-suite.jpg`) is captioned "Concept rendering" on every page
-   it appears — provenance (real event vs. composited) was not confirmed, so
-   keep that caption unless you can confirm otherwise.
-4. **Fonts** are loaded from Google Fonts (Schibsted Grotesk + Instrument
-   Serif) via CDN. Self-host if you'd rather avoid the third-party request.
+1. **Connect the demand report form.** Edit `assets/js/config.js` and set
+   `FORM_WEBHOOK_URL` to your form-handling endpoint. The form POSTs a JSON
+   payload with `name, email, venue, role, submittedAt, source`. Until it's
+   set, submitting shows a message pointing people to hello@book-encore.com.
+2. **Illustrative content.** Harbor Arena, the Automotive Innovation Summit and
+   all figures on Home are illustrative, as the footer states.
+3. **Fonts** are loaded from Google Fonts (Inter + Geist Mono). Self-host if
+   you'd rather avoid the third-party request.
 
 ## Local preview
 
