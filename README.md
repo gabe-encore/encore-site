@@ -31,10 +31,12 @@ host without extra rewrite rules.
 
 ## Before launch
 
-1. **Connect the demand report form.** Edit `assets/js/config.js` and set
-   `FORM_WEBHOOK_URL` to your form-handling endpoint. The form POSTs a JSON
-   payload with `name, email, venue, role, submittedAt, source`. Until it's
-   set, submitting shows a message pointing people to hello@book-encore.com.
+1. **Demand report form uses mailto.** Submitting opens the visitor's email
+   app with a drafted message to gabe@book-encore.com (name, email, venue,
+   role); they still have to press Send. The recipient is `REPORT_TO` in
+   `assets/js/site.js`. The confirmation screen offers "Open email again" and
+   "Copy details" for visitors without a mail app. (`assets/js/config.js` is
+   only used by the legacy pages.)
 2. **Illustrative content.** Harbor Arena, the Automotive Innovation Summit and
    all figures on Home are illustrative, as the footer states.
 3. **Fonts** are loaded from Google Fonts (Inter + Geist Mono). Self-host if

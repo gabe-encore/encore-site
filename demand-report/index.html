@@ -6,13 +6,13 @@
   <meta name="theme-color" content="#05070B" />
   <meta name="color-scheme" content="dark" />
   <title>Free 90-Day Demand Report for Your Arena | Encore</title>
-  <meta name="description" content="See which companies are coming to your city in the next 90 days, matched to your open dates, with estimated opportunity value and 5 ready-to-send outreach drafts." />
+  <meta name="description" content="See how much corporate demand is headed to your city in the next 90 days: how many conferences, how many companies, and a few standout opportunities matched to your open dates." />
   <link rel="canonical" href="https://book-encore.com/demand-report/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Encore" />
   <meta property="og:title" content="Free 90-Day Demand Report for Your Arena | Encore" />
-  <meta property="og:description" content="See which companies are coming to your city in the next 90 days, matched to your open dates." />
+  <meta property="og:description" content="See how much corporate demand is headed to your city in the next 90 days." />
   <meta property="og:url" content="https://book-encore.com/demand-report/" />
   <meta property="og:image" content="https://book-encore.com/assets/img/og-default.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -37,16 +37,15 @@
   <main id="main" class="container report">
     <div>
       <p class="eyebrow">Free 90-day demand report</p>
-      <h1>Find out which companies are coming to your city in the next 90 days.</h1>
+      <h1>See how much corporate demand is headed to your city in the next 90 days.</h1>
       <p class="eyebrow eyebrow--dim" style="margin-top:32px">What's in the report</p>
       <ul class="report__list">
-        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#mic-vocal"/></svg>Upcoming conferences and summits in your market</li>
-        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#building-2"/></svg>The companies attending</li>
-        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#target"/></svg>High-fit targets matched to your open dates</li>
-        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#trending-up"/></svg>Estimated opportunity value</li>
-        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#send"/></svg>5 ready-to-send outreach drafts</li>
+        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#mic-vocal"/></svg>How many conferences and summits are coming to your market</li>
+        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#building-2"/></svg>How many companies are attending</li>
+        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#target"/></svg>A few standout opportunities matched to your open dates</li>
+        <li><svg class="i i-16" aria-hidden="true"><use href="/assets/img/icons.svg#trending-up"/></svg>Estimated total opportunity value</li>
       </ul>
-      <p class="report__small">No commitment, no integration required.</p>
+      <p class="report__small">The full company list and ready-to-send outreach come with an Encore pilot. No commitment, no integration required.</p>
     </div>
 
     <div class="form-card">
@@ -79,16 +78,23 @@
             <svg class="i i-16 field__chev" aria-hidden="true"><use href="/assets/img/icons.svg#chevron-down"/></svg>
           </span>
         </label>
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Send my report</button>
-        <p class="form__status" data-form-status role="alert"></p>
-        <p class="form__note">Your report arrives within 3 business days.</p>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Request my report</button>
+        <p class="form__note">Opens an email to Encore with your details. Your report arrives within 3 business days.</p>
       </form>
 
       <div class="sent" data-sent role="status" tabindex="-1" hidden>
-        <span class="badge badge--positive" style="align-self:flex-start"><span class="badge__dot"></span>Received</span>
-        <p class="sent__title">Thanks. Your report will arrive within 3 business days.</p>
-        <p class="sent__sub">Want to walk through it together?</p>
-        <a href="mailto:hello@book-encore.com?subject=Demand%20report%20walkthrough" class="btn btn-primary">Book 20 minutes</a>
+        <span class="badge badge--signal" style="align-self:flex-start"><span class="badge__dot"></span>One more step</span>
+        <p class="sent__title">Hit Send in your email app to request your report.</p>
+        <p class="sent__sub">We drafted an email to <a href="mailto:gabe@book-encore.com">gabe@book-encore.com</a> with your details. Your report arrives within 3 business days of sending it.</p>
+        <div class="sent__fallback">
+          <p class="sent__small">Email app didn't open?</p>
+          <div class="sent__actions">
+            <a href="mailto:gabe@book-encore.com" class="btn btn-primary" data-mailto-again>Open email again</a>
+            <button type="button" class="btn btn-secondary" data-copy>Copy details</button>
+          </div>
+          <p class="sent__small" data-copy-status aria-live="polite"></p>
+        </div>
+        <button type="button" class="sent__edit" data-edit>← Edit details</button>
       </div>
     </div>
   </main>
@@ -102,7 +108,6 @@
     </div>
   </footer>
 
-  <script src="/assets/js/config.js"></script>
   <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

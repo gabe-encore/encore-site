@@ -260,10 +260,9 @@
   // ---- Demand report form ------------------------------------------------
   var form = $("[data-report-form]");
   if (form) {
-    var statusEl = $("[data-form-status]", form);
-    var submitBtn = $("[type=submit]", form);
     var sent = $("[data-sent]");
-    var tried = false;
+    var REPORT_TO = "gabe@book-encore.com";
+    var tried = false, body = "", mailto = "";
     var rules = {
       name: function (v) { return v.trim() ? "" : "Add your name"; },
       email: function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? "" : "Use your work email"; },
@@ -289,35 +288,48 @@
       var bad = validate();
       if (bad) { bad.focus(); return; }
 
-      var webhookUrl = window.ENCORE_CONFIG && window.ENCORE_CONFIG.FORM_WEBHOOK_URL;
-      if (!webhookUrl || webhookUrl.indexOf("REPLACE_WITH") === 0) {
-        statusEl.textContent = "The form isn't connected yet. Email hello@book-encore.com and we'll send your report.";
-        return;
+      var d = {};
+      new FormData(form).forEach(function (v, k) { d[k] = String(v).trim(); });
+      var subject = "Demand report request: " + d.venue;
+      body = [
+        "Name: " + d.name,
+        "Work email: " + d.email,
+        "Venue: " + d.venue,
+        "Role: " + d.role,
+        "",
+        "Sent from book-encore.com/demand-report"
+      ].join("\r\n");
+      mailto = "mailto:" + REPORT_TO + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+      if (window.gtag) window.gtag("event", "demand_report_submit", { role: d.role });
+      $("[data-mailto-again]", sent).setAttribute("href", mailto);
+      $("[data-copy-status]", sent).textContent = "";
+      form.hidden = true;
+      sent.hidden = false;
+      sent.focus();
+      window.location.href = mailto;
+    });
+
+    $("[data-edit]", sent).addEventListener("click", function () {
+      sent.hidden = true;
+      form.hidden = false;
+      form.elements.name.focus();
+    });
+
+    // Fallback for visitors with no mail app set up: copy the request to paste into webmail
+    $("[data-copy]", sent).addEventListener("click", function () {
+      var status = $("[data-copy-status]", sent);
+      var text = "To: " + REPORT_TO + "\n" + body.replace(/\r\n/g, "\n");
+      var done = function () { status.textContent = "Copied. Paste it into an email to " + REPORT_TO + "."; };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done, function () { status.textContent = "Couldn't copy. Email " + REPORT_TO + " with your name, venue and role."; });
+      } else {
+        var ta = document.createElement("textarea");
+        ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); done(); } catch (err) { status.textContent = "Couldn't copy. Email " + REPORT_TO + " with your name, venue and role."; }
+        document.body.removeChild(ta);
       }
-
-      var payload = {};
-      new FormData(form).forEach(function (v, k) { payload[k] = v; });
-      payload.submittedAt = new Date().toISOString();
-      payload.source = "book-encore.com/demand-report";
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = "Sending…";
-      statusEl.textContent = "";
-      fetch(webhookUrl, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
-        .then(function (r) {
-          if (!r.ok) throw new Error("status " + r.status);
-          if (window.gtag) window.gtag("event", "demand_report_submit", { role: payload.role });
-          form.hidden = true;
-          sent.hidden = false;
-          sent.focus();
-        })
-        .catch(function () {
-          statusEl.textContent = "Something went wrong sending that. Please try again, or email hello@book-encore.com.";
-        })
-        .finally(function () {
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Send my report";
-        });
     });
   }
 })();
