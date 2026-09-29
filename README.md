@@ -31,7 +31,7 @@ host without extra rewrite rules.
 
 ## Before launch
 
-1. **Demand report form uses mailto.** Submitting opens the visitor's email
+1. **Demand briefing form uses mailto.** Submitting opens the visitor's email
    app with a drafted message to gabe@book-encore.com (name, email, venue,
    role); they still have to press Send. The recipient is `REPORT_TO` in
    `assets/js/site.js`. The confirmation screen offers "Open email again" and

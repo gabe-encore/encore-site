@@ -359,7 +359,7 @@
 
       var d = {};
       new FormData(form).forEach(function (v, k) { d[k] = String(v).trim(); });
-      var subject = "Demand report request: " + d.venue;
+      var subject = "Demand briefing request: " + d.venue;
       body = [
         "Name: " + d.name,
         "Work email: " + d.email,
