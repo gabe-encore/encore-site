@@ -24,6 +24,13 @@
     return function () { stopped = true; cancelAnimationFrame(raf); };
   }
 
+  // ---- Encore app links --------------------------------------------------
+  // Single switch for the app environment. Production: "https://app.book-encore.com".
+  // Links carry data-app-path (e.g. "/start", "/plan"); their HTML href is the production
+  // URL so they still work if this script doesn't run.
+  var APP_URL = "https://app-staging.book-encore.com";
+  $$("[data-app-path]").forEach(function (a) { a.href = APP_URL + a.getAttribute("data-app-path"); });
+
   // ---- Footer year -------------------------------------------------------
   $$("[data-year]").forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
 
