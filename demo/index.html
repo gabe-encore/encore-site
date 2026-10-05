@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#05070B" />
+  <meta name="color-scheme" content="dark" />
+  <title>Book a Demo · See Who's Coming to Your City | Encore</title>
+  <meta name="description" content="A short demo of Encore with examples of companies traveling to your market, matched to your venue's open dates." />
+  <link rel="canonical" href="https://book-encore.com/demo/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Encore" />
+  <meta property="og:title" content="See who's coming to your city. | Encore" />
+  <meta property="og:description" content="A short demo with examples from your market." />
+  <meta property="og:url" content="https://book-encore.com/demo/" />
+  <meta property="og:image" content="https://book-encore.com/assets/img/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="/assets/img/favicon-512.png" type="image/png" sizes="512x512" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary">
+      <a href="/" class="nav__logo" aria-label="Encore home"><img src="/assets/brand/encore-logo-white.png" alt="Encore" width="133" height="22" /></a>
+      <div class="nav__links">
+        <a href="/">For venues</a>
+        <a href="/plan/">Plan an event</a>
+        <a href="/#how-it-works">How it works</a>
+        <a href="https://app-staging.book-encore.com/start" data-app-path="/start">Log in</a>
+        <a href="/demo/" class="btn btn-primary btn-sm">Book a demo</a>
+      </div>
+      <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+        <svg class="i i-open" aria-hidden="true"><use href="/assets/img/icons.svg#menu"/></svg>
+        <svg class="i i-close" aria-hidden="true"><use href="/assets/img/icons.svg#x"/></svg>
+      </button>
+    </nav>
+    <nav id="mobile-menu" class="mobile-menu" data-mobile-menu aria-label="Mobile">
+      <a href="/">For venues</a>
+      <a href="/plan/">Plan an event</a>
+      <a href="/#how-it-works">How it works</a>
+      <a href="https://app-staging.book-encore.com/start" data-app-path="/start">Log in</a>
+      <a href="/demo/" class="btn btn-primary btn-lg btn-block">Book a demo</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container demo">
+    <div>
+      <p class="eyebrow">Meet with Encore</p>
+      <h1>See who's coming to your city.</h1>
+      <p class="lede">A short walkthrough with examples of companies traveling to your market, matched to your open dates, seeing firsthand how top venues fill their idle premium capacity.</p>
+      <div class="demo__alt">
+        <span class="eyebrow">Or pick a time now</span>
+        <p>Choose a slot on our calendar and skip the form.</p>
+        <a href="https://calendar.app.google/6KHFfEngVETtsaE66" data-calendar target="_blank" rel="noopener" class="btn btn-secondary"><svg class="i" aria-hidden="true"><use href="/assets/img/icons.svg#calendar-check"/></svg>Choose a time</a>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <form class="form" data-demo-form novalidate>
+        <label class="field">
+          <span class="field__label">Name</span>
+          <input type="text" name="name" placeholder="Jordan Lee" autocomplete="name" required aria-describedby="err-name" />
+          <span class="field__error" id="err-name" aria-live="polite"></span>
+        </label>
+        <label class="field">
+          <span class="field__label">Work email</span>
+          <input type="email" name="email" placeholder="jordan@yourteam.com" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required aria-describedby="err-email" />
+          <span class="field__error" id="err-email" aria-live="polite"></span>
+        </label>
+        <label class="field">
+          <span class="field__label">Venue or team</span>
+          <input type="text" name="venue" placeholder="Your arena or team" autocomplete="organization" required aria-describedby="err-venue" />
+          <span class="field__error" id="err-venue" aria-live="polite"></span>
+        </label>
+        <label class="field">
+          <span class="field__label">Role (optional)</span>
+          <span class="field__control">
+            <select name="role" class="is-empty">
+              <option value="">Select a role</option>
+              <option>VP, Premium Sales</option>
+              <option>Director, Premium Sales</option>
+              <option>Group &amp; hospitality sales</option>
+              <option>Partnerships</option>
+              <option>Other</option>
+            </select>
+            <svg class="i i-16 field__chev" aria-hidden="true"><use href="/assets/img/icons.svg#chevron-down"/></svg>
+          </span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Book a demo</button>
+        <p class="form__note">Opens an email to Encore with your details, then you can pick a time.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="/" aria-label="Encore home"><img src="/assets/brand/encore-logo-white.png" alt="Encore" width="133" height="22" loading="lazy" /></a>
+          <p>The demand intelligence engine for premium venues.</p>
+          <a href="https://app-staging.book-encore.com/plan" data-app-path="/plan" class="footer__app">Planning an event? See availability →</a>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="/">For venues</a>
+          <a href="/demo/">Book a demo</a>
+          <a href="/plan/">Plan an event</a>
+          <a href="mailto:hello@book-encore.com">Contact</a>
+          <a href="/plan/#how-it-works">How it works</a>
+          <a href="https://app-staging.book-encore.com/start" data-app-path="/start">Log in</a>
+        </nav>
+      </div>
+      <div class="footer__legal">
+        <span>© <span data-year>2026</span> Encore · <a href="mailto:hello@book-encore.com">hello@book-encore.com</a></span>
+        <span>Content marked “Illustrative example” is not a customer outcome.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js" defer></script>
+</body>
+</html>
